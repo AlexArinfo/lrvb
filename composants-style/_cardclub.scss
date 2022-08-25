@@ -1,0 +1,80 @@
+#infospratiques{
+    padding-bottom: 2vh;
+    .container{
+        width: 60%;
+        margin: auto;
+        
+        @media only screen and (max-width: 992px){
+            width: 80%;
+        } 
+        
+        @media only screen and (min-device-width : 992px) and (max-device-width : 1600px){
+            width: 70%;
+        } 
+        h2{
+            @include h2;
+            width: 16%;
+            @media only screen and (max-width: 1600px){
+                width: 100%;
+            } 
+        } 
+        .cardsinfos{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .containercard{
+                width: 20%;
+                @media only screen and (max-width: 768px){
+                    width: 100%;
+                } 
+                
+                @media only screen and (max-width: 992px){
+                    padding-bottom: 5vh;
+                } 
+                
+                
+                @media only screen and (min-device-width : 768px) and (max-device-width : 1600px){
+                    width: 45%;
+                    
+                } 
+                
+                @media only screen and (min-device-width : 992px) and (max-device-width : 1600px){
+                    padding-bottom: 5vh;
+                } 
+                .card{
+                    width: 90%;
+                    margin: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border: solid 1px #012636;
+                    padding: 2vh;
+                    border-radius: 30px;
+                    background-color: #012636;
+                    
+                    @media only screen and (min-device-width : 992px) and (max-device-width : 1600px){
+                        width: 70%;
+                    } 
+                    img{
+                        width: 15%;
+                        height: auto;
+                    }
+                    h3{
+                        @include h3;
+                        color: white;
+                    }
+                    p{
+                        @include p;
+                        color: white;
+                    }
+                    
+                    form{
+                        @include button;
+                    }
+                    
+                }
+                
+            }
+        }
+    }
+}

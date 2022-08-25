@@ -1,0 +1,126 @@
+footer{
+    background-color: $sectext;
+    padding-top: 5vh;
+    .container{
+        width: 60%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+
+        @media only screen and (max-width: 992px){
+            width: 95%;
+        }
+
+        @media only screen and (min-device-width : 992px) and (max-device-width : 1600px){
+        width: 70%;
+                } 
+        .colfoo{
+            width: 15%;
+            display: flex;
+            flex-direction: column;
+            @media only screen and (max-width: 992px){
+             width: 20%;   
+            }
+            h3{
+                font-family: 'Anek Tamil';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 23px;
+                color: white;
+                text-transform: uppercase;
+            }
+        }
+        #logfoo{
+            a{
+                width:50%;
+                img{
+                    width: 100%;
+                    height: auto; 
+                }
+            }
+        }
+        #rctart, #part{
+            ul{
+                padding-left: 0px;
+                list-style: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        font-family: 'Jost';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 30px;
+                        color: $prim;
+                        
+                        
+                    }
+                }
+            }
+        }
+        
+        #cnt{
+            h4{
+                font-family: 'Anek Tamil';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                color: $prim;
+                text-transform: uppercase; 
+                margin-bottom: 0px;
+            }
+            p{
+                text-decoration: none;
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                color: $prim;   
+                margin: 0px;
+            }
+            #rs{
+                ul{
+                    padding-left: 0px;
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    li{
+                        width: 10%;
+                        a{
+                            img{
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+    }
+    #underfooter{
+        background-color: $sectext;
+        border-top: 1px solid #012636;
+        .container{
+            padding-top: 1vh;
+            width: 60%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+           
+            a{
+                font-family: 'Anek Tamil';
+                font-style: normal;
+                font-weight: 200;
+                font-size: 20px;
+                color: white;
+                text-decoration: none;
+                font-size: 1.063em;
+                &:hover{
+                    color: $prim;
+                }   
+            }
+        }
+    }
+}

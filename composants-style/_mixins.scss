@@ -1,0 +1,110 @@
+@mixin heroup{
+    .heroup{
+        position: relative;
+        height: 700px;
+        h1{
+            right: 0;
+            bottom:0;
+            position: absolute;
+            background: rgba(0, 126, 199, 0.6);
+            font-family: 'Anek Tamil';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 80px;
+            color: #EEEEEE; 
+            text-transform: uppercase;
+        }
+        .hero{
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: grayscale(10);
+        }
+        
+    }
+}
+
+@mixin h2{
+    width: 100%;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: #00171F; 
+    justify-content: space-between;
+    padding-left: 3%;
+    border-left: 5px $prim solid;
+    
+    
+}
+
+@mixin h3{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
+    color: #00171F;
+    display: flex;
+    align-items: center;
+}
+
+@mixin p{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 20px;
+    text-align: justify;
+    color: $primtext;
+    @media only screen and (max-width: 992px){
+        line-height: 1.7;   
+        font-size: 1.2em;
+    }
+    
+    a{
+        @media only screen and (max-width: 1600px){
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.2em;
+            line-height: 20px;
+            text-align: justify;
+            color: $prim;
+            
+        }
+    }
+}
+
+@mixin button{
+    button{
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.125em;
+        line-height: 1.625em;
+        background-color: $prim;
+        color: white;
+        border: 1px solid #007EC6;
+        border-radius: 15px;
+        padding: 2px 12px;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        @media only screen and (max-width: 1600px){
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .8px;
+            padding: 15px 33px;
+            display: inline-block;
+            -webkit-appearance: none; 
+        }
+        &:hover{
+            background-color: white;
+            color: $prim;  
+        }
+    }
+}

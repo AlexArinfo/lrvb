@@ -1,0 +1,198 @@
+#blog{
+    .container{
+        @media only screen and (min-device-width : 768px) and (max-device-width : 992px){
+        width: 80%;
+                } 
+    }
+}
+
+
+.heroupsingle{
+    height: 700px;
+    position: relative;
+    .hero{
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: grayscale(10);
+    }
+    #infosarticle{
+        position: absolute;
+        width: 25%;
+        top: 35%;
+        left: 20%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        
+        @media only screen and (max-width: 1600px){
+            width: 70%;
+            left: 7%;
+            
+        }
+        .date{
+            width: 12%;
+            #dm{
+                display: flex;
+                flex-direction: column;
+                
+                #time{
+                    font-family: 'Anek Tamil';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 23px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    background-color: $prim !important;
+                    padding: 10%;
+                }
+                #month{
+                    font-family: 'Anek Tamil';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 23px;
+                    text-align: center;
+                    color: #FFFFFF; 
+                    background-color: $prim !important;
+                    padding: 10%;
+                }
+                #year{
+                    background-color: $sectext;
+                    font-family: 'Anek Tamil';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 23px;
+                    text-align: center;
+                    color: #FFFFFF; 
+                    padding: 20%;
+                    
+                }
+            }
+            
+        }
+        #infoarticlebis{
+            display: flex;
+            flex-direction: column;
+            h1{
+                margin: 0px;
+                a{
+                    font-family: 'Jost';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 2em; 
+                    line-height: 69px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    
+                }
+            } 
+            
+            .allinfos{
+                display: flex;
+                align-items: baseline;
+                justify-content: space-between;
+                width: 60%;
+
+               
+                
+                .aut{
+                    font-family: 'Jost';
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 23px;
+                    color: white;
+                    
+                    &:before{
+                        content: "\f017";
+                        font-family: FontAwesome;
+                        color: $prim;
+                        padding-right:1vw;
+                        
+                    }
+                }
+                
+                .cat{
+                    ul{
+                        padding-left: 0px;
+                        list-style: none;
+                        li{
+                            a{
+                                font-family: 'Jost';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 17px;
+                                text-decoration: none;
+                                color: white;
+                                &:before{
+                                    content: "\f114";
+                                    font-family: FontAwesome;
+                                    color: $prim;  
+                                    padding-right:1vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+    }
+    
+}
+
+#single{
+    margin-top:2%;
+    .container{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        @media only screen and (max-width: 1600px){
+            flex-direction: column;   
+        }
+
+        @media only screen and (min-device-width : 992px) and (max-device-width : 1600px){
+        width: 70%;
+                } 
+        
+        
+    } 
+    
+    
+    
+    #medcont{
+        width: 50%;
+        @media only screen and (max-width: 1600px){
+            width: 100%;   
+        }
+        
+        article{
+            p{
+                @include p;
+            }
+        }
+    }
+    
+    #sidecont{
+        width: 25%;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: justify;
+        color: #00171F;
+        
+        @media only screen and (max-width: 1600px){
+            width: 100%;   
+        }
+        
+        
+    }
+}

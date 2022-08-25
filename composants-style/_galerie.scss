@@ -1,0 +1,45 @@
+.page-id-11{
+  .heroup{
+    .hero{
+      background-position: center;
+    }
+  }
+}
+
+#galerie{
+    .container{
+        width: 60%;
+        margin: auto;
+        @media only screen and (max-width: 768px){
+         width: 80%;   
+        }
+   
+    .acf-gallery {
+        list-style-type: none; /* Retirer le style de liste */
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap; /* Autoriser le retour à la ligne */
+      }
+      
+      .acf-gallery li {
+        flex: 33.333%; /* 3 images par ligne, mettez 25% pour en avoir 4 */
+        padding: 10px;
+      }
+    }
+      
+}
+.lightbox {
+    display: none; /* cachée par défaut */
+    position: fixed; /* fixée et qui prend tout l'écran */
+    z-index: 1000; /* Pour être sûr de passer au dessus du reste */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(7, 7, 7); /* noire avec transparence */
+    background-size: contain; /* l'image occupe tout l'espace disponible */
+    background-repeat: no-repeat; 
+    background-position: center;
+    cursor: pointer; /* Le curseur a la même forme que sur un lien */
+  }

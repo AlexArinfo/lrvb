@@ -1,0 +1,1843 @@
+@charset "UTF-8";
+/* Theme Name: Thème LRVB
+   Description: Thème personnalisé pour le site de LRVB
+   Version: 1.0
+   Author: Alex Magnaldi Fluoh
+*/
+#matches {
+  z-index: 1;
+  position: fixed;
+  background-color: #00171F;
+  width: 100%; }
+  #matches p {
+    width: 80%;
+    margin: auto;
+    color: white;
+    font-family: 'Anek Tamil';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 28px;
+    color: #FFFFFF;
+    animation: flip-horizontal-top 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) reverse both; }
+
+@keyframes flip-horizontal-top {
+  0% {
+    transform: rotateX(0); }
+  100% {
+    transform: rotateX(180deg); } }
+    #matches p span {
+      font-family: 'Anek Tamil';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: #FFFFFF; }
+
+header {
+  padding-top: 4vh;
+  padding-bottom: 1vh; }
+  @media only screen and (max-width: 768px) {
+    header {
+      display: none; } }
+  header #contheader {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    @media only screen and (min-device-width: 992px) and (max-device-width: 1600px) {
+      header #contheader {
+        width: 70%;
+        margin: auto; } }
+    header #contheader nav {
+      width: 50%; }
+      header #contheader nav ul {
+        justify-content: space-between;
+        display: flex; }
+        header #contheader nav ul li {
+          list-style: none; }
+          header #contheader nav ul li a {
+            font-family: "Anek Tamil";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 23px;
+            color: #007EC6;
+            text-transform: uppercase;
+            text-decoration: none; }
+            header #contheader nav ul li a:hover {
+              color: #007EC6;
+              font-weight: 400; }
+          header #contheader nav ul li span {
+            position: relative; }
+            header #contheader nav ul li span::before, header #contheader nav ul li span::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              width: 2px;
+              background-color: #007EC6;
+              transform-origin: center;
+              transform: scaleY(0);
+              transition: transform 0.5s ease; }
+            header #contheader nav ul li span::before {
+              left: -8px; }
+            header #contheader nav ul li span::after {
+              right: -8px; }
+            header #contheader nav ul li span:hover::before, header #contheader nav ul li span:hover::after {
+              transform: scaleY(1); }
+        header #contheader nav ul ul {
+          display: none;
+          background: black;
+          position: absolute;
+          box-shadow: -3px 3px 10px -2px rgba(0, 0, 0, 0.1);
+          border: 1px solid rgba(0, 0, 0, 0.1); }
+          header #contheader nav ul ul li {
+            float: none;
+            position: relative; }
+            header #contheader nav ul ul li a {
+              padding: 15px 30px;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+          header #contheader nav ul ul ul {
+            position: absolute;
+            left: 100%;
+            top: 0; }
+    header #contheader a {
+      width: 15%; }
+      header #contheader a img {
+        width: 50%;
+        height: auto; }
+  header .toggle-menu {
+    width: 28px;
+    height: 28px;
+    position: absolute; }
+    @media only screen and (max-width: 768px) {
+      header .toggle-menu {
+        display: block; } }
+    header .toggle-menu span {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #007EC6;
+      transition: all 0.3s;
+      backface-visibility: hidden;
+      border-radius: 2px; }
+      header .toggle-menu span:after, header .toggle-menu span:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 9px; }
+      header .toggle-menu span:after {
+        top: 18px;
+        width: 100%;
+        height: 2px;
+        background-color: #007EC6;
+        transition: all 0.3s;
+        backface-visibility: hidden;
+        border-radius: 2px; }
+      header .toggle-menu span:before {
+        width: 100%;
+        height: 2px;
+        background-color: #007EC6;
+        transition: all 0.3s;
+        backface-visibility: hidden;
+        border-radius: 2px; }
+    header .toggle-menu.on span {
+      background-color: transparent; }
+      header .toggle-menu.on span:before {
+        transform: rotate(45deg) translate(-1px, 0); }
+      header .toggle-menu.on span:after {
+        transform: rotate(-45deg) translate(6px, -7px); }
+  header .tog-menu {
+    display: none; }
+    @media only screen and (max-width: 768px) {
+      header .tog-menu {
+        display: block; } }
+    header .tog-menu a {
+      margin-top: 25px;
+      margin-left: 10px;
+      position: relative; }
+  header img {
+    height: 97px;
+    width: 136px; }
+
+.tog {
+  height: 10vh;
+  background-color: #007EC6; }
+  .tog .toggle-menu {
+    width: 30px;
+    position: absolute;
+    height: 30px; }
+    .tog .toggle-menu span {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: white;
+      transition: all 0.3s;
+      backface-visibility: hidden;
+      border-radius: 2px; }
+      .tog .toggle-menu span:after, .tog .toggle-menu span:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 9px; }
+      .tog .toggle-menu span:after {
+        top: 18px;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        transition: all 0.3s;
+        backface-visibility: hidden;
+        border-radius: 2px; }
+      .tog .toggle-menu span:before {
+        width: 100%;
+        height: 2px;
+        background-color: #007EC6;
+        transition: all 0.3s;
+        backface-visibility: hidden;
+        border-radius: 2px; }
+    .tog .toggle-menu.on span {
+      background-color: transparent; }
+      .tog .toggle-menu.on span:before {
+        transform: rotate(45deg) translate(-1px, 0); }
+      .tog .toggle-menu.on span:after {
+        transform: rotate(-45deg) translate(6px, -7px); }
+  .tog .tog-menu {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    top: 2vh;
+    right: 2vw; }
+
+.bdp-container {
+  width: 100%;
+  height: 0.5vh;
+  background: white;
+  position: fixed;
+  z-index: 1000;
+  top: 0px; }
+  .bdp-container .bdp {
+    height: 0.5vh;
+    background: #007EC6;
+    width: 0%; }
+
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  text-align: center;
+  color: #007EC6;
+  font-size: 18px;
+  border: solid 3px #007EC6;
+  outline: none;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 10px;
+  width: 70px;
+  height: auto; }
+
+#myBtn img {
+  width: 70%;
+  height: auto; }
+
+#myBtn img:hover {
+  animation: rotate-center 1.5s ease-in-out both; }
+
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+
+#index {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%2300171F' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23007EC6'%3E%3Ccircle cx='769' cy='229' r='7'/%3E%3Ccircle cx='539' cy='269' r='7'/%3E%3Ccircle cx='603' cy='493' r='7'/%3E%3Ccircle cx='731' cy='737' r='7'/%3E%3Ccircle cx='520' cy='660' r='7'/%3E%3Ccircle cx='309' cy='538' r='7'/%3E%3Ccircle cx='295' cy='764' r='7'/%3E%3Ccircle cx='40' cy='599' r='7'/%3E%3Ccircle cx='102' cy='382' r='7'/%3E%3Ccircle cx='127' cy='80' r='7'/%3E%3Ccircle cx='370' cy='105' r='7'/%3E%3Ccircle cx='578' cy='42' r='7'/%3E%3Ccircle cx='237' cy='261' r='7'/%3E%3Ccircle cx='390' cy='382' r='7'/%3E%3C/g%3E%3C/svg%3E"); }
+  #index .container {
+    width: 50%;
+    margin: auto;
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+    background-color: #ffffffb3; }
+    @media only screen and (max-width: 768px) {
+      #index .container {
+        width: 80%;
+        padding-bottom: 2vh; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
+      #index .container {
+        width: 80%;
+        padding-bottom: 2vh; } }
+    @media only screen and (min-device-width: 992px) and (max-device-width: 1600px) {
+      #index .container {
+        width: 70%; } }
+    #index .container #left {
+      width: 100%; }
+      #index .container #left h2 {
+        width: 100%;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        color: #00171F;
+        justify-content: space-between;
+        padding-left: 3%;
+        border-left: 5px #007EC6 solid; }
+      #index .container #left p {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 20px;
+        text-align: justify;
+        color: #9b9b9b; }
+        @media only screen and (max-width: 992px) {
+          #index .container #left p {
+            line-height: 1.7;
+            font-size: 1.2em; } }
+        @media only screen and (max-width: 1600px) {
+          #index .container #left p a {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.2em;
+            line-height: 20px;
+            text-align: justify;
+            color: #007EC6; } }
+  #index #actus .container {
+    display: block; }
+    #index #actus .container h2 {
+      width: 100%;
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 35px;
+      color: #00171F;
+      justify-content: space-between;
+      padding-left: 3%;
+      border-left: 5px #007EC6 solid; }
+    #index #actus .container #allarticlesbis {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      #index #actus .container #allarticlesbis article {
+        background-color: white;
+        width: 25%;
+        margin-bottom: 2%; }
+        @media only screen and (max-width: 768px) {
+          #index #actus .container #allarticlesbis article {
+            width: 100%; } }
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1600px) {
+          #index #actus .container #allarticlesbis article {
+            width: 45%; } }
+        #index #actus .container #allarticlesbis article .imgarticle img {
+          width: 100%;
+          height: auto; }
+        #index #actus .container #allarticlesbis article .textearticle {
+          width: 80%;
+          margin: auto; }
+          @media only screen and (max-width: 768px) {
+            #index #actus .container #allarticlesbis article .textearticle {
+              width: 100%; } }
+          #index #actus .container #allarticlesbis article .textearticle .date {
+            font-family: 'Jost';
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 23px;
+            color: #9b9b9b; }
+            #index #actus .container #allarticlesbis article .textearticle .date:before {
+              content: "\f017";
+              font-family: FontAwesome;
+              color: #007EC6; }
+          #index #actus .container #allarticlesbis article .textearticle h3 a {
+            font-family: 'Jost';
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 26px;
+            color: #00171F;
+            text-decoration: none; }
+          #index #actus .container #allarticlesbis article .textearticle p {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1em;
+            line-height: 20px;
+            text-align: justify;
+            color: #9b9b9b; }
+            @media only screen and (max-width: 992px) {
+              #index #actus .container #allarticlesbis article .textearticle p {
+                line-height: 1.7;
+                font-size: 1.2em; } }
+            @media only screen and (max-width: 1600px) {
+              #index #actus .container #allarticlesbis article .textearticle p a {
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.2em;
+                line-height: 20px;
+                text-align: justify;
+                color: #007EC6; } }
+            #index #actus .container #allarticlesbis article .textearticle p a {
+              font-family: 'Jost';
+              font-style: normal;
+              font-weight: 200;
+              font-size: 14px;
+              line-height: 20px;
+              color: #007EC6;
+              text-decoration: none; }
+              @media only screen and (max-width: 1600px) {
+                #index #actus .container #allarticlesbis article .textearticle p a {
+                  font-size: 1em; } }
+          #index #actus .container #allarticlesbis article .textearticle hr {
+            border: 1px solid #EFEFEF; }
+          #index #actus .container #allarticlesbis article .textearticle .allinfos {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            width: 60%; }
+            #index #actus .container #allarticlesbis article .textearticle .allinfos .aut {
+              font-family: 'Jost';
+              font-style: normal;
+              font-weight: 300;
+              font-size: 12px;
+              line-height: 17px;
+              color: #00171F; }
+              @media only screen and (max-width: 1600px) {
+                #index #actus .container #allarticlesbis article .textearticle .allinfos .aut {
+                  font-size: 1em; } }
+              #index #actus .container #allarticlesbis article .textearticle .allinfos .aut:before {
+                content: "\f2c0";
+                font-family: FontAwesome;
+                color: #007EC6;
+                padding-right: 1vw; }
+            #index #actus .container #allarticlesbis article .textearticle .allinfos .cat ul {
+              padding-left: 0px;
+              list-style: none; }
+              #index #actus .container #allarticlesbis article .textearticle .allinfos .cat ul li a {
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 17px;
+                text-decoration: none;
+                color: #00171F; }
+                #index #actus .container #allarticlesbis article .textearticle .allinfos .cat ul li a:before {
+                  content: "\f114";
+                  font-family: FontAwesome;
+                  color: #007EC6;
+                  padding-right: 1vw; }
+                @media only screen and (max-width: 1600px) {
+                  #index #actus .container #allarticlesbis article .textearticle .allinfos .cat ul li a {
+                    font-size: 1em; } }
+    #index #actus .container form {
+      text-align: right; }
+      #index #actus .container form button {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.125em;
+        line-height: 1.625em;
+        background-color: #007EC6;
+        color: white;
+        border: 1px solid #007EC6;
+        border-radius: 15px;
+        padding: 2px 12px;
+        transition: 0.3s ease-in-out;
+        cursor: pointer; }
+        @media only screen and (max-width: 1600px) {
+          #index #actus .container form button {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .8px;
+            padding: 15px 33px;
+            display: inline-block;
+            -webkit-appearance: none; } }
+        #index #actus .container form button:hover {
+          background-color: white;
+          color: #007EC6; }
+      #index #actus .container form button {
+        padding: 4px 24px; }
+  #index #zelive h2 {
+    width: 100%;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: #00171F;
+    justify-content: space-between;
+    padding-left: 3%;
+    border-left: 5px #007EC6 solid; }
+  #index #resultats {
+    height: 200px;
+    background-image: url("http://localhost:8888/lrvb/wp-content/uploads/2022/06/lrvbvolley-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+    #index #resultats .container {
+      display: block; }
+      #index #resultats .container h2 {
+        width: 100%;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        color: #00171F;
+        justify-content: space-between;
+        padding-left: 3%;
+        border-left: 5px #007EC6 solid;
+        color: white; }
+      #index #resultats .container a {
+        font-family: 'Anek Tamil', sans-serif;
+        font-style: normal;
+        text-decoration: none;
+        color: white; }
+  #index #partenaires .container h2 {
+    width: 100%;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: #00171F;
+    justify-content: space-between;
+    padding-left: 3%;
+    border-left: 5px #007EC6 solid; }
+  #index #partenaires .container .autoplay {
+    width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    color: white; }
+    #index #partenaires .container .autoplay .parent-slide {
+      padding: 15px; }
+    #index #partenaires .container .autoplay img {
+      display: block;
+      margin: auto; }
+
+#slideshow {
+  width: 100%;
+  height: 60vh;
+  position: relative; }
+  @media only screen and (max-width: 992px) {
+    #slideshow {
+      height: 35vh; } }
+  @media only screen and (min-device-width: 992px) and (max-device-width: 1600px) {
+    #slideshow {
+      height: 60vh; } }
+  #slideshow img {
+    position: absolute;
+    width: 100%;
+    height: auto; }
+
+#compteur {
+  background-color: #007EC6;
+  padding-top: 1vh;
+  padding-bottom: 1vh; }
+  #compteur .containerbis {
+    width: 50%;
+    margin: auto; }
+    @media only screen and (max-width: 992px) {
+      #compteur .containerbis {
+        width: 80%;
+        padding-top: 1vh;
+        padding-bottom: 1vh; } }
+    @media only screen and (min-device-width: 992px) and (max-device-width: 1600px) {
+      #compteur .containerbis {
+        width: 70%; } }
+    #compteur .containerbis h2 {
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 35px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 3%;
+      border-left: 5px #00171F solid; }
+    #compteur .containerbis #groupecompteur {
+      display: flex;
+      justify-content: space-between; }
+      #compteur .containerbis #groupecompteur .nomit {
+        display: flex;
+        flex-direction: column; }
+        #compteur .containerbis #groupecompteur .nomit .count {
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 64px;
+          line-height: 92px;
+          color: white;
+          margin-top: 5%;
+          margin-bottom: 5%; }
+        #compteur .containerbis #groupecompteur .nomit .item {
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 29px;
+          color: #FFFFFF;
+          margin-bottom: 5%; }
+
+#club {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%2300171F' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23007EC6'%3E%3Ccircle cx='769' cy='229' r='7'/%3E%3Ccircle cx='539' cy='269' r='7'/%3E%3Ccircle cx='603' cy='493' r='7'/%3E%3Ccircle cx='731' cy='737' r='7'/%3E%3Ccircle cx='520' cy='660' r='7'/%3E%3Ccircle cx='309' cy='538' r='7'/%3E%3Ccircle cx='295' cy='764' r='7'/%3E%3Ccircle cx='40' cy='599' r='7'/%3E%3Ccircle cx='102' cy='382' r='7'/%3E%3Ccircle cx='127' cy='80' r='7'/%3E%3Ccircle cx='370' cy='105' r='7'/%3E%3Ccircle cx='578' cy='42' r='7'/%3E%3Ccircle cx='237' cy='261' r='7'/%3E%3Ccircle cx='390' cy='382' r='7'/%3E%3C/g%3E%3C/svg%3E"); }
+  #club #adhesion {
+    padding-top: 2vh;
+    padding-bottom: 2vh; }
+    @media only screen and (max-width: 992px) {
+      #club #adhesion .container {
+        width: 80%;
+        margin: auto; } }
+    @media only screen and (min-device-width: 992px) and (max-device-width: 1600px) {
+      #club #adhesion .container {
+        width: 70%;
+        margin: auto; } }
+    #club #adhesion .container #adhe {
+      width: 100%; }
+      #club #adhesion .container #adhe article {
+        width: 60%;
+        margin: auto;
+        background-color: #ffffffb3; }
+        @media only screen and (max-width: 1600px) {
+          #club #adhesion .container #adhe article {
+            width: 100%; } }
+        #club #adhesion .container #adhe article h2 {
+          width: 100%;
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 35px;
+          color: #00171F;
+          justify-content: space-between;
+          padding-left: 3%;
+          border-left: 5px #007EC6 solid;
+          margin-top: 0;
+          width: 50%; }
+        #club #adhesion .container #adhe article #new p {
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1em;
+          line-height: 20px;
+          text-align: justify;
+          color: #9b9b9b; }
+          @media only screen and (max-width: 992px) {
+            #club #adhesion .container #adhe article #new p {
+              line-height: 1.7;
+              font-size: 1.2em; } }
+          @media only screen and (max-width: 1600px) {
+            #club #adhesion .container #adhe article #new p a {
+              font-family: 'Jost';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 1.2em;
+              line-height: 20px;
+              text-align: justify;
+              color: #007EC6; } }
+        #club #adhesion .container #adhe article #new a {
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: #007EC6;
+          text-decoration: none; }
+        #club #adhesion .container #adhe article #old p {
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1em;
+          line-height: 20px;
+          text-align: justify;
+          color: #9b9b9b; }
+          @media only screen and (max-width: 992px) {
+            #club #adhesion .container #adhe article #old p {
+              line-height: 1.7;
+              font-size: 1.2em; } }
+          @media only screen and (max-width: 1600px) {
+            #club #adhesion .container #adhe article #old p a {
+              font-family: 'Jost';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 1.2em;
+              line-height: 20px;
+              text-align: justify;
+              color: #007EC6; } }
+        #club #adhesion .container #adhe article #old form button {
+          font-family: "Jost";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 1.125em;
+          line-height: 1.625em;
+          background-color: #007EC6;
+          color: white;
+          border: 1px solid #007EC6;
+          border-radius: 15px;
+          padding: 2px 12px;
+          transition: 0.3s ease-in-out;
+          cursor: pointer; }
+          @media only screen and (max-width: 1600px) {
+            #club #adhesion .container #adhe article #old form button {
+              font-size: 13px;
+              font-weight: 700;
+              text-transform: uppercase;
+              letter-spacing: .8px;
+              padding: 15px 33px;
+              display: inline-block;
+              -webkit-appearance: none; } }
+          #club #adhesion .container #adhe article #old form button:hover {
+            background-color: white;
+            color: #007EC6; }
+  #club #crecal {
+    display: flex;
+    width: 60%;
+    margin: auto; }
+    @media only screen and (max-width: 992px) {
+      #club #crecal {
+        width: 80%;
+        flex-direction: column;
+        margin-bottom: 5vh; } }
+    @media only screen and (min-device-width: 992px) and (max-device-width: 1600px) {
+      #club #crecal {
+        width: 70%;
+        flex-direction: column;
+        margin-bottom: 5vh; } }
+    #club #crecal .crenaux {
+      width: 50%; }
+      @media only screen and (max-width: 1600px) {
+        #club #crecal .crenaux {
+          width: 100%;
+          margin-bottom: 2vh; } }
+      #club #crecal .crenaux .contcrenaux {
+        background-color: #ffffffb3; }
+        #club #crecal .crenaux .contcrenaux h2 {
+          width: 100%;
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 35px;
+          color: #00171F;
+          justify-content: space-between;
+          padding-left: 3%;
+          border-left: 5px #007EC6 solid;
+          width: 45%; }
+        #club #crecal .crenaux .contcrenaux p {
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1em;
+          line-height: 20px;
+          text-align: justify;
+          color: #9b9b9b; }
+          @media only screen and (max-width: 992px) {
+            #club #crecal .crenaux .contcrenaux p {
+              line-height: 1.7;
+              font-size: 1.2em; } }
+          @media only screen and (max-width: 1600px) {
+            #club #crecal .crenaux .contcrenaux p a {
+              font-family: 'Jost';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 1.2em;
+              line-height: 20px;
+              text-align: justify;
+              color: #007EC6; } }
+        #club #crecal .crenaux .contcrenaux form button {
+          font-family: "Jost";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 1.125em;
+          line-height: 1.625em;
+          background-color: #007EC6;
+          color: white;
+          border: 1px solid #007EC6;
+          border-radius: 15px;
+          padding: 2px 12px;
+          transition: 0.3s ease-in-out;
+          cursor: pointer; }
+          @media only screen and (max-width: 1600px) {
+            #club #crecal .crenaux .contcrenaux form button {
+              font-size: 13px;
+              font-weight: 700;
+              text-transform: uppercase;
+              letter-spacing: .8px;
+              padding: 15px 33px;
+              display: inline-block;
+              -webkit-appearance: none; } }
+          #club #crecal .crenaux .contcrenaux form button:hover {
+            background-color: white;
+            color: #007EC6; }
+    #club #crecal .calendrier {
+      width: 50%; }
+      @media only screen and (max-width: 1600px) {
+        #club #crecal .calendrier {
+          width: 100%; } }
+      #club #crecal .calendrier .contcalendrier {
+        background-color: #ffffffb3; }
+        #club #crecal .calendrier .contcalendrier h2 {
+          width: 100%;
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 35px;
+          color: #00171F;
+          justify-content: space-between;
+          padding-left: 3%;
+          border-left: 5px #007EC6 solid;
+          width: 22%; }
+        #club #crecal .calendrier .contcalendrier p {
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1em;
+          line-height: 20px;
+          text-align: justify;
+          color: #9b9b9b; }
+          @media only screen and (max-width: 992px) {
+            #club #crecal .calendrier .contcalendrier p {
+              line-height: 1.7;
+              font-size: 1.2em; } }
+          @media only screen and (max-width: 1600px) {
+            #club #crecal .calendrier .contcalendrier p a {
+              font-family: 'Jost';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 1.2em;
+              line-height: 20px;
+              text-align: justify;
+              color: #007EC6; } }
+        #club #crecal .calendrier .contcalendrier form button {
+          font-family: "Jost";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 1.125em;
+          line-height: 1.625em;
+          background-color: #007EC6;
+          color: white;
+          border: 1px solid #007EC6;
+          border-radius: 15px;
+          padding: 2px 12px;
+          transition: 0.3s ease-in-out;
+          cursor: pointer; }
+          @media only screen and (max-width: 1600px) {
+            #club #crecal .calendrier .contcalendrier form button {
+              font-size: 13px;
+              font-weight: 700;
+              text-transform: uppercase;
+              letter-spacing: .8px;
+              padding: 15px 33px;
+              display: inline-block;
+              -webkit-appearance: none; } }
+          #club #crecal .calendrier .contcalendrier form button:hover {
+            background-color: white;
+            color: #007EC6; }
+
+#infospratiques {
+  padding-bottom: 2vh; }
+  #infospratiques .container {
+    width: 60%;
+    margin: auto; }
+    @media only screen and (max-width: 992px) {
+      #infospratiques .container {
+        width: 80%; } }
+    @media only screen and (min-device-width: 992px) and (max-device-width: 1600px) {
+      #infospratiques .container {
+        width: 70%; } }
+    #infospratiques .container h2 {
+      width: 100%;
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 35px;
+      color: #00171F;
+      justify-content: space-between;
+      padding-left: 3%;
+      border-left: 5px #007EC6 solid;
+      width: 16%; }
+      @media only screen and (max-width: 1600px) {
+        #infospratiques .container h2 {
+          width: 100%; } }
+    #infospratiques .container .cardsinfos {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      #infospratiques .container .cardsinfos .containercard {
+        width: 20%; }
+        @media only screen and (max-width: 768px) {
+          #infospratiques .container .cardsinfos .containercard {
+            width: 100%; } }
+        @media only screen and (max-width: 992px) {
+          #infospratiques .container .cardsinfos .containercard {
+            padding-bottom: 5vh; } }
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1600px) {
+          #infospratiques .container .cardsinfos .containercard {
+            width: 45%; } }
+        @media only screen and (min-device-width: 992px) and (max-device-width: 1600px) {
+          #infospratiques .container .cardsinfos .containercard {
+            padding-bottom: 5vh; } }
+        #infospratiques .container .cardsinfos .containercard .card {
+          width: 90%;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border: solid 1px #012636;
+          padding: 2vh;
+          border-radius: 30px;
+          background-color: #012636; }
+          @media only screen and (min-device-width: 992px) and (max-device-width: 1600px) {
+            #infospratiques .container .cardsinfos .containercard .card {
+              width: 70%; } }
+          #infospratiques .container .cardsinfos .containercard .card img {
+            width: 15%;
+            height: auto; }
+          #infospratiques .container .cardsinfos .containercard .card h3 {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 35px;
+            color: #00171F;
+            display: flex;
+            align-items: center;
+            color: white; }
+          #infospratiques .container .cardsinfos .containercard .card p {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1em;
+            line-height: 20px;
+            text-align: justify;
+            color: #9b9b9b;
+            color: white; }
+            @media only screen and (max-width: 992px) {
+              #infospratiques .container .cardsinfos .containercard .card p {
+                line-height: 1.7;
+                font-size: 1.2em; } }
+            @media only screen and (max-width: 1600px) {
+              #infospratiques .container .cardsinfos .containercard .card p a {
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.2em;
+                line-height: 20px;
+                text-align: justify;
+                color: #007EC6; } }
+          #infospratiques .container .cardsinfos .containercard .card form button {
+            font-family: "Jost";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 1.125em;
+            line-height: 1.625em;
+            background-color: #007EC6;
+            color: white;
+            border: 1px solid #007EC6;
+            border-radius: 15px;
+            padding: 2px 12px;
+            transition: 0.3s ease-in-out;
+            cursor: pointer; }
+            @media only screen and (max-width: 1600px) {
+              #infospratiques .container .cardsinfos .containercard .card form button {
+                font-size: 13px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: .8px;
+                padding: 15px 33px;
+                display: inline-block;
+                -webkit-appearance: none; } }
+            #infospratiques .container .cardsinfos .containercard .card form button:hover {
+              background-color: white;
+              color: #007EC6; }
+
+.page-id-11 .heroup .hero {
+  background-position: center; }
+
+#galerie .container {
+  width: 60%;
+  margin: auto; }
+  @media only screen and (max-width: 768px) {
+    #galerie .container {
+      width: 80%; } }
+  #galerie .container .acf-gallery {
+    list-style-type: none;
+    /* Retirer le style de liste */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* Autoriser le retour à la ligne */ }
+  #galerie .container .acf-gallery li {
+    flex: 33.333%;
+    /* 3 images par ligne, mettez 25% pour en avoir 4 */
+    padding: 10px; }
+
+.lightbox {
+  display: none;
+  /* cachée par défaut */
+  position: fixed;
+  /* fixée et qui prend tout l'écran */
+  z-index: 1000;
+  /* Pour être sûr de passer au dessus du reste */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #070707;
+  /* noire avec transparence */
+  background-size: contain;
+  /* l'image occupe tout l'espace disponible */
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  /* Le curseur a la même forme que sur un lien */ }
+
+.heroup {
+  position: relative;
+  height: 700px; }
+  .heroup h1 {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background: rgba(0, 126, 199, 0.6);
+    font-family: 'Anek Tamil';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    color: #EEEEEE;
+    text-transform: uppercase; }
+  .heroup .hero {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(10); }
+
+#blog {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='267' height='267' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23007EC6' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%2300171F'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E"); }
+  #blog .container {
+    width: 50%;
+    margin: auto; }
+    @media only screen and (max-width: 768px) {
+      #blog .container {
+        width: 80%; } }
+    @media only screen and (min-device-width: 992px) and (max-device-width: 1600px) {
+      #blog .container {
+        width: 70%; } }
+    #blog .container h2 {
+      width: 100%;
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 35px;
+      color: #00171F;
+      justify-content: space-between;
+      padding-left: 3%;
+      border-left: 5px #007EC6 solid; }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
+  #blog .container {
+    width: 80%; } }
+
+.heroupsingle {
+  height: 700px;
+  position: relative; }
+  .heroupsingle .hero {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(10); }
+  .heroupsingle #infosarticle {
+    position: absolute;
+    width: 25%;
+    top: 35%;
+    left: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; }
+    @media only screen and (max-width: 1600px) {
+      .heroupsingle #infosarticle {
+        width: 70%;
+        left: 7%; } }
+    .heroupsingle #infosarticle .date {
+      width: 12%; }
+      .heroupsingle #infosarticle .date #dm {
+        display: flex;
+        flex-direction: column; }
+        .heroupsingle #infosarticle .date #dm #time {
+          font-family: 'Anek Tamil';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 23px;
+          text-align: center;
+          color: #FFFFFF;
+          background-color: #007EC6 !important;
+          padding: 10%; }
+        .heroupsingle #infosarticle .date #dm #month {
+          font-family: 'Anek Tamil';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 23px;
+          text-align: center;
+          color: #FFFFFF;
+          background-color: #007EC6 !important;
+          padding: 10%; }
+        .heroupsingle #infosarticle .date #dm #year {
+          background-color: #00171F;
+          font-family: 'Anek Tamil';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 23px;
+          text-align: center;
+          color: #FFFFFF;
+          padding: 20%; }
+    .heroupsingle #infosarticle #infoarticlebis {
+      display: flex;
+      flex-direction: column; }
+      .heroupsingle #infosarticle #infoarticlebis h1 {
+        margin: 0px; }
+        .heroupsingle #infosarticle #infoarticlebis h1 a {
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 2em;
+          line-height: 69px;
+          text-align: center;
+          color: #FFFFFF;
+          text-decoration: none; }
+      .heroupsingle #infosarticle #infoarticlebis .allinfos {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 60%; }
+        .heroupsingle #infosarticle #infoarticlebis .allinfos .aut {
+          font-family: 'Jost';
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 23px;
+          color: white; }
+          .heroupsingle #infosarticle #infoarticlebis .allinfos .aut:before {
+            content: "\f017";
+            font-family: FontAwesome;
+            color: #007EC6;
+            padding-right: 1vw; }
+        .heroupsingle #infosarticle #infoarticlebis .allinfos .cat ul {
+          padding-left: 0px;
+          list-style: none; }
+          .heroupsingle #infosarticle #infoarticlebis .allinfos .cat ul li a {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 17px;
+            text-decoration: none;
+            color: white; }
+            .heroupsingle #infosarticle #infoarticlebis .allinfos .cat ul li a:before {
+              content: "\f114";
+              font-family: FontAwesome;
+              color: #007EC6;
+              padding-right: 1vw; }
+
+#single {
+  margin-top: 2%; }
+  #single .container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; }
+    @media only screen and (max-width: 1600px) {
+      #single .container {
+        flex-direction: column; } }
+    @media only screen and (min-device-width: 992px) and (max-device-width: 1600px) {
+      #single .container {
+        width: 70%; } }
+  #single #medcont {
+    width: 50%; }
+    @media only screen and (max-width: 1600px) {
+      #single #medcont {
+        width: 100%; } }
+    #single #medcont article p {
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1em;
+      line-height: 20px;
+      text-align: justify;
+      color: #9b9b9b; }
+      @media only screen and (max-width: 992px) {
+        #single #medcont article p {
+          line-height: 1.7;
+          font-size: 1.2em; } }
+      @media only screen and (max-width: 1600px) {
+        #single #medcont article p a {
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 1.2em;
+          line-height: 20px;
+          text-align: justify;
+          color: #007EC6; } }
+  #single #sidecont {
+    width: 25%;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+    color: #00171F; }
+    @media only screen and (max-width: 1600px) {
+      #single #sidecont {
+        width: 100%; } }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
+  #actus .container {
+    width: 80%; } }
+
+#allarticles {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  #allarticles article {
+    background-color: white;
+    width: 26%;
+    margin-bottom: 2%; }
+    @media only screen and (max-width: 768px) {
+      #allarticles article {
+        width: 100%; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 993px) {
+      #allarticles article {
+        width: 45%; } }
+    @media only screen and (min-device-width: 992px) and (max-device-width: 1600px) {
+      #allarticles article {
+        width: 30%; } }
+    #allarticles article .imgarticle img {
+      width: 100%;
+      height: auto; }
+    #allarticles article .textearticle {
+      width: 80%;
+      margin: auto; }
+      #allarticles article .textearticle .date {
+        font-family: 'Jost';
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 23px;
+        color: #9b9b9b; }
+        #allarticles article .textearticle .date:before {
+          content: "\f017";
+          font-family: FontAwesome;
+          color: #007EC6; }
+      #allarticles article .textearticle h3 a {
+        font-family: 'Jost';
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 26px;
+        color: #00171F;
+        text-decoration: none; }
+      #allarticles article .textearticle p {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 20px;
+        text-align: justify;
+        color: #9b9b9b; }
+        @media only screen and (max-width: 992px) {
+          #allarticles article .textearticle p {
+            line-height: 1.7;
+            font-size: 1.2em; } }
+        @media only screen and (max-width: 1600px) {
+          #allarticles article .textearticle p a {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.2em;
+            line-height: 20px;
+            text-align: justify;
+            color: #007EC6; } }
+        #allarticles article .textearticle p a {
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: #007EC6;
+          text-decoration: none; }
+      #allarticles article .textearticle hr {
+        border: 1px solid #EFEFEF; }
+      #allarticles article .textearticle .allinfos {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 60%; }
+        @media only screen and (min-device-width: 992px) and (max-device-width: 1600px) {
+          #allarticles article .textearticle .allinfos {
+            width: 100%; } }
+        #allarticles article .textearticle .allinfos .aut {
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 17px;
+          color: #00171F; }
+          #allarticles article .textearticle .allinfos .aut:before {
+            content: "\f2c0";
+            font-family: FontAwesome;
+            color: #007EC6;
+            padding-right: 1vw; }
+        #allarticles article .textearticle .allinfos .cat ul {
+          padding-left: 0px;
+          list-style: none; }
+          #allarticles article .textearticle .allinfos .cat ul li a {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 17px;
+            text-decoration: none;
+            color: #00171F; }
+            #allarticles article .textearticle .allinfos .cat ul li a:before {
+              content: "\f114";
+              font-family: FontAwesome;
+              color: #007EC6;
+              padding-right: 1vw; }
+
+#equipe h2 {
+  width: 100%;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: #00171F;
+  justify-content: space-between;
+  padding-left: 3%;
+  border-left: 5px #007EC6 solid; }
+
+#equipe hr {
+  padding-top: 10vh;
+  border-top: 0px; }
+
+#equipe .container {
+  width: 40%;
+  margin: auto; }
+  @media only screen and (max-width: 992px) {
+    #equipe .container {
+      width: 80%; } }
+  @media only screen and (min-device-width: 992px) and (max-device-width: 1600px) {
+    #equipe .container {
+      width: 70%; } }
+  #equipe .container #fem, #equipe .container #masc, #equipe .container #loisir {
+    margin-top: 5vh; }
+    #equipe .container #fem .nav-link, #equipe .container #masc .nav-link, #equipe .container #loisir .nav-link {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: 'Anek Tamil', sans-serif;
+      font-size: 18px;
+      color: #007EC6; }
+    #equipe .container #fem .tab-pane .phototab, #equipe .container #masc .tab-pane .phototab, #equipe .container #loisir .tab-pane .phototab {
+      width: 100%;
+      height: 50%; }
+      #equipe .container #fem .tab-pane .phototab img, #equipe .container #masc .tab-pane .phototab img, #equipe .container #loisir .tab-pane .phototab img {
+        width: 100%;
+        height: auto; }
+    #equipe .container #fem .tab-pane .entraineur, #equipe .container #masc .tab-pane .entraineur, #equipe .container #loisir .tab-pane .entraineur {
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1em;
+      line-height: 20px;
+      text-align: justify;
+      color: #9b9b9b; }
+      @media only screen and (max-width: 992px) {
+        #equipe .container #fem .tab-pane .entraineur, #equipe .container #masc .tab-pane .entraineur, #equipe .container #loisir .tab-pane .entraineur {
+          line-height: 1.7;
+          font-size: 1.2em; } }
+      @media only screen and (max-width: 1600px) {
+        #equipe .container #fem .tab-pane .entraineur a, #equipe .container #masc .tab-pane .entraineur a, #equipe .container #loisir .tab-pane .entraineur a {
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 1.2em;
+          line-height: 20px;
+          text-align: justify;
+          color: #007EC6; } }
+    #equipe .container #fem .tab-pane .liencalendrier, #equipe .container #masc .tab-pane .liencalendrier, #equipe .container #loisir .tab-pane .liencalendrier {
+      font-family: 'Anek Tamil', sans-serif;
+      font-style: normal;
+      color: #007EC6; }
+  #equipe .container #loisir {
+    margin-bottom: 5vh; }
+
+#inscription #blocinscriptions {
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+  width: 100%;
+  display: flex; }
+  #inscription #blocinscriptions #leftinscription {
+    width: 50%;
+    height: 485px;
+    clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+    background-image: url("http://localhost:8888/lrvb/wp-content/uploads/2022/08/lrvb-lien-inscription.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top; }
+    @media only screen and (max-width: 992px) {
+      #inscription #blocinscriptions #leftinscription {
+        display: none; } }
+  #inscription #blocinscriptions #rightinscription {
+    width: 50%; }
+    @media only screen and (max-width: 992px) {
+      #inscription #blocinscriptions #rightinscription {
+        width: 80%;
+        margin: auto; } }
+    #inscription #blocinscriptions #rightinscription h2 {
+      width: 100%;
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 35px;
+      color: #00171F;
+      justify-content: space-between;
+      padding-left: 3%;
+      border-left: 5px #007EC6 solid;
+      margin-top: 0px; }
+    #inscription #blocinscriptions #rightinscription p {
+      width: 80%;
+      margin: left;
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1em;
+      line-height: 20px;
+      text-align: justify;
+      color: #9b9b9b; }
+      @media only screen and (max-width: 992px) {
+        #inscription #blocinscriptions #rightinscription p {
+          line-height: 1.7;
+          font-size: 1.2em; } }
+      @media only screen and (max-width: 1600px) {
+        #inscription #blocinscriptions #rightinscription p a {
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 1.2em;
+          line-height: 20px;
+          text-align: justify;
+          color: #007EC6; } }
+      @media only screen and (max-width: 992px) {
+        #inscription #blocinscriptions #rightinscription p {
+          width: 100%; } }
+    #inscription #blocinscriptions #rightinscription form button {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 1.125em;
+      line-height: 1.625em;
+      background-color: #007EC6;
+      color: white;
+      border: 1px solid #007EC6;
+      border-radius: 15px;
+      padding: 2px 12px;
+      transition: 0.3s ease-in-out;
+      cursor: pointer; }
+      @media only screen and (max-width: 1600px) {
+        #inscription #blocinscriptions #rightinscription form button {
+          font-size: 13px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: .8px;
+          padding: 15px 33px;
+          display: inline-block;
+          -webkit-appearance: none; } }
+      #inscription #blocinscriptions #rightinscription form button:hover {
+        background-color: white;
+        color: #007EC6; }
+
+#defieco {
+  margin-top: 5vh;
+  margin-bottom: 5vh; }
+  #defieco .container {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap; }
+    @media only screen and (max-width: 768px) {
+      #defieco .container {
+        width: 80%; } }
+    #defieco .container article {
+      width: 33.33%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 3vh;
+      margin-bottom: 3vh; }
+      @media only screen and (max-width: 768px) {
+        #defieco .container article {
+          width: 50%; } }
+      #defieco .container article img {
+        width: 10%;
+        height: auto; }
+      #defieco .container article h3 {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 1.55;
+        text-align: center;
+        text-transform: uppercase;
+        color: black; }
+      #defieco .container article p {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 20px;
+        text-align: justify;
+        color: #9b9b9b;
+        text-align: center;
+        width: 80%;
+        margin: auto; }
+        @media only screen and (max-width: 992px) {
+          #defieco .container article p {
+            line-height: 1.7;
+            font-size: 1.2em; } }
+        @media only screen and (max-width: 1600px) {
+          #defieco .container article p a {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.2em;
+            line-height: 20px;
+            text-align: justify;
+            color: #007EC6; } }
+
+#menpol .container {
+  width: 80%;
+  margin: auto; }
+  #menpol .container h2 {
+    width: 100%;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: #00171F;
+    justify-content: space-between;
+    padding-left: 3%;
+    border-left: 5px #007EC6 solid; }
+  #menpol .container p {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 30px;
+    text-align: justify;
+    color: #00171F; }
+
+#contact {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse; }
+  @media only screen and (max-width: 992px) {
+    #contact {
+      flex-direction: column; } }
+  @media only screen and (min-device-width: 992px) and (max-device-width: 1600px) {
+    #contact {
+      width: 70%;
+      margin: auto; } }
+  #contact #contactform {
+    width: 30%; }
+    @media only screen and (max-width: 992px) {
+      #contact #contactform {
+        width: 100%; } }
+    @media only screen and (min-device-width: 992px) and (max-device-width: 1600px) {
+      #contact #contactform {
+        width: 50%; } }
+    #contact #contactform form input, #contact #contactform form textarea {
+      width: 100%;
+      border: 1px solid #EFEFEF;
+      border-style: solid;
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 26px;
+      color: #686868;
+      padding: 10px;
+      /* marge interne de 10 pixels*/
+      border-radius: 3px;
+      /* rayon de la bordure courbé de 3 pixels */
+      background: #e8eaed;
+      /* arrière-plan de couleur #e8eaed (code couleur HEX) */ }
+    #contact #contactform #champs {
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      color: #686868; }
+    #contact #contactform .wpcf7-submit {
+      width: 30%;
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 26px;
+      background-color: white;
+      color: #007EC6;
+      border: 1px solid #007EC6;
+      border-radius: 15px;
+      padding: 2px 12px;
+      transition: .3s ease-in-out;
+      /* animation de transition, dans ce cas pour la transition de couleur d’arrière-plan en mode survol */
+      cursor: pointer; }
+      #contact #contactform .wpcf7-submit:hover {
+        background-color: #007EC6;
+        color: white; }
+  #contact #adresse {
+    width: 50%; }
+    @media only screen and (max-width: 992px) {
+      #contact #adresse {
+        width: 100%; } }
+    @media only screen and (min-device-width: 992px) and (max-device-width: 1600px) {
+      #contact #adresse {
+        width: 50%; } }
+    #contact #adresse h2 {
+      width: 100%;
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 35px;
+      color: #00171F;
+      justify-content: space-between;
+      padding-left: 3%;
+      border-left: 5px #007EC6 solid; }
+    #contact #adresse p {
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 20px;
+      color: #686868; }
+
+#map h2 {
+  width: 100%;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: #00171F;
+  justify-content: space-between;
+  padding-left: 3%;
+  border-left: 5px #007EC6 solid;
+  width: 80%;
+  margin: auto; }
+
+#sidecont h2 {
+  width: 100%;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: #00171F;
+  justify-content: space-between;
+  padding-left: 3%;
+  border-left: 5px #007EC6 solid; }
+
+@media only screen and (max-width: 1600px) {
+  #sidecont #colart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; } }
+
+#sidecont #colart article {
+  display: flex;
+  margin-bottom: 2vh; }
+  @media only screen and (max-width: 768px) {
+    #sidecont #colart article {
+      width: 51%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1600px) {
+    #sidecont #colart article {
+      width: 45%; } }
+  #sidecont #colart article .sideinfos {
+    width: 60%;
+    margin: auto;
+    margin-top: 0px; }
+    @media only screen and (max-width: 1600px) {
+      #sidecont #colart article .sideinfos {
+        width: 50%; } }
+    #sidecont #colart article .sideinfos h3 {
+      margin-top: 0; }
+      #sidecont #colart article .sideinfos h3 a {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400 !important;
+        font-size: 18px;
+        line-height: 26px;
+        color: #00171F;
+        text-decoration: none; }
+    #sidecont #colart article .sideinfos .sideinfosbis {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      width: 50%; }
+      @media only screen and (max-width: 768px) {
+        #sidecont #colart article .sideinfos .sideinfosbis {
+          width: 100%; } }
+      @media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
+        #sidecont #colart article .sideinfos .sideinfosbis {
+          flex-direction: column; } }
+      @media only screen and (min-device-width: 992px) and (max-device-width: 1600px) {
+        #sidecont #colart article .sideinfos .sideinfosbis {
+          width: 100%; } }
+      #sidecont #colart article .sideinfos .sideinfosbis .aut {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 17px;
+        color: #00171F; }
+        #sidecont #colart article .sideinfos .sideinfosbis .aut:before {
+          content: "\f2c0";
+          font-family: FontAwesome;
+          color: #007EC6;
+          padding-right: 0.5vw; }
+      #sidecont #colart article .sideinfos .sideinfosbis .cat ul {
+        padding-left: 0px;
+        list-style: none; }
+        #sidecont #colart article .sideinfos .sideinfosbis .cat ul li a {
+          font-family: 'Jost';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 17px;
+          text-decoration: none;
+          color: #00171F; }
+          #sidecont #colart article .sideinfos .sideinfosbis .cat ul li a:before {
+            content: "\f114";
+            font-family: FontAwesome;
+            color: #007EC6;
+            padding-right: 0.5vw; }
+
+footer {
+  background-color: #00171F;
+  padding-top: 5vh; }
+  footer .container {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; }
+    @media only screen and (max-width: 992px) {
+      footer .container {
+        width: 95%; } }
+    @media only screen and (min-device-width: 992px) and (max-device-width: 1600px) {
+      footer .container {
+        width: 70%; } }
+    footer .container .colfoo {
+      width: 15%;
+      display: flex;
+      flex-direction: column; }
+      @media only screen and (max-width: 992px) {
+        footer .container .colfoo {
+          width: 20%; } }
+      footer .container .colfoo h3 {
+        font-family: 'Anek Tamil';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 23px;
+        color: white;
+        text-transform: uppercase; }
+    footer .container #logfoo a {
+      width: 50%; }
+      footer .container #logfoo a img {
+        width: 100%;
+        height: auto; }
+    footer .container #rctart ul, footer .container #part ul {
+      padding-left: 0px;
+      list-style: none; }
+      footer .container #rctart ul li a, footer .container #part ul li a {
+        text-decoration: none;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 30px;
+        color: #007EC6; }
+    footer .container #cnt h4 {
+      font-family: 'Anek Tamil';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      color: #007EC6;
+      text-transform: uppercase;
+      margin-bottom: 0px; }
+    footer .container #cnt p {
+      text-decoration: none;
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      color: #007EC6;
+      margin: 0px; }
+    footer .container #cnt #rs ul {
+      padding-left: 0px;
+      list-style: none;
+      display: flex;
+      justify-content: space-between; }
+      footer .container #cnt #rs ul li {
+        width: 10%; }
+        footer .container #cnt #rs ul li a img {
+          width: 100%;
+          height: auto; }
+  footer #underfooter {
+    background-color: #00171F;
+    border-top: 1px solid #012636; }
+    footer #underfooter .container {
+      padding-top: 1vh;
+      width: 60%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between; }
+      footer #underfooter .container a {
+        font-family: 'Anek Tamil';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        font-size: 1.063em; }
+        footer #underfooter .container a:hover {
+          color: #007EC6; }
+
+body {
+  margin: 0px; }
+
+.countfect {
+  font-family: 'Archivo Black';
+  font-size: 2.5rem;
+  /* more styles here */ }
+/*# sourceMappingURL=style.css.map */

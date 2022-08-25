@@ -1,0 +1,45 @@
+#inscription{
+    #blocinscriptions{
+        padding-top: 7vh;
+        padding-bottom: 7vh;
+        width: 100%;
+        display: flex;
+        #leftinscription{
+            @media only screen and (max-width: 992px){
+             display: none;   
+            }
+            width: 50%;
+            height: 485px;
+            clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+            background-image: url("http://localhost:8888/lrvb/wp-content/uploads/2022/08/lrvb-lien-inscription.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+        
+        #rightinscription{
+            width: 50%;
+            @media only screen and (max-width: 992px){
+             width: 80%;  
+             margin: auto; 
+            }
+             h2{
+                 @include h2;
+                 margin-top: 0px;
+             }
+            p{
+                width: 80%;
+                margin: left;
+                @include p;   
+                @media only screen and (max-width: 992px){
+                 width: 100%;   
+                }         
+            }
+            form{
+                @include button;
+            }
+        }
+    }
+    
+    
+}

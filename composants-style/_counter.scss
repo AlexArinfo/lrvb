@@ -1,0 +1,67 @@
+  #compteur{
+    background-color: $prim;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    .containerbis{
+        width: 50%;
+        margin: auto;
+
+        @media only screen and (max-width: 992px){
+         width: 80%;   
+         padding-top: 1vh;
+         padding-bottom: 1vh;
+        }
+
+        @media only screen and (min-device-width : 992px) and (max-device-width : 1600px){
+        width: 70%;
+                } 
+        h2{
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 35px;
+            color: white;
+            display: flex;    
+            justify-content: space-between;
+            padding-left: 3%;
+            border-left: 5px $sectext solid;
+        }
+        
+        #groupecompteur{
+            display: flex;
+            justify-content: space-between;
+            .nomit{
+                display: flex;
+                flex-direction: column;
+                .count{
+font-family: 'Jost';
+font-style: normal;
+font-weight: 600;
+font-size: 64px;
+line-height: 92px;
+color: white;
+margin-top:5%;
+margin-bottom: 5%;
+                }
+
+                .item{
+font-family: 'Jost';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 29px;
+color: #FFFFFF;
+margin-bottom: 5%;
+                }
+            }
+            
+        }
+        
+        
+    }
+}
+
+
+

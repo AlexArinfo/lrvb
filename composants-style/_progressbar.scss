@@ -1,0 +1,19 @@
+.bdp-container {
+  width: 100%;
+  height: 0.5vh;
+  background: white;
+  position: fixed;
+  z-index:1000;
+  top: 0px;
+
+    .bdp {
+      height:0.5vh;
+      // background: rgb(109,110,31);
+      background: $prim;
+      width: 0%;
+      }
+
+}
+
+
+

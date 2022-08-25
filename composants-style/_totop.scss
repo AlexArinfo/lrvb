@@ -1,0 +1,26 @@
+#myBtn {
+    // display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    text-align: center;
+    color: #007EC6;
+    font-size: 18px;
+    border: solid 3px #007EC6;
+    outline: none;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 10px;
+    width: 70px;
+    height: auto; }
+    #myBtn img {
+      width: 70%;
+      height: auto; }
+      #myBtn img:hover {
+        animation: rotate-center 1.5s ease-in-out both; }
+  
+  @keyframes rotate-center {
+    0% {
+      transform: rotate(0); }
+    100% {
+      transform: rotate(360deg); } }
