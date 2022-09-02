@@ -4,10 +4,13 @@
         padding-bottom: 7vh;
         width: 100%;
         display: flex;
+
+        @media (min-width: 320px) { 
+        width: 80%;
+        margin: auto;
+        }
         #leftinscription{
-            @media only screen and (min-width: 576px){
-             display: none;   
-            }
+            display: none;
             width: 50%;
             height: 485px;
             clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
@@ -19,10 +22,9 @@
         
         #rightinscription{
             width: 50%;
-            @media only screen and (min-width: 576px){
-             width: 80%;  
-             margin: auto; 
-            }
+           @media (min-width: 320px) { 
+           width: 100%;
+           }
              h2{
                  @include h2;
                  margin-top: 0px;
@@ -31,9 +33,9 @@
                 width: 80%;
                 margin: left;
                 @include p;   
-                @media only screen and (min-width: 576px){
-                 width: 100%;   
-                }         
+                @media (min-width: 320px) { 
+                width: 100%;
+                }        
             }
             form{
                 @include button;

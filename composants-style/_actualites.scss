@@ -37,9 +37,10 @@
         }
         .date{
             width: 12%;
-            
+               
            @media (min-width: 320px) { 
                 margin-right: 5vh;
+                width: 22%;
             }
             #dm{
                 display: flex;
@@ -100,54 +101,7 @@
                 }
             } 
             
-            .allinfos{
-                display: flex;
-                align-items: baseline;
-                justify-content: space-between;
-                width: 60%;
-                
-                
-                
-                .aut{
-                    font-family: 'Jost';
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 23px;
-                    color: white;
-                    
-                    &:before{
-                        content: "\f017";
-                        font-family: FontAwesome;
-                        color: $prim;
-                        padding-right:1vw;
-                        
-                    }
-                }
-                
-                .cat{
-                    ul{
-                        padding-left: 0px;
-                        list-style: none;
-                        li{
-                            a{
-                                font-family: 'Jost';
-                                font-style: normal;
-                                font-weight: 400;
-                                font-size: 12px;
-                                line-height: 17px;
-                                text-decoration: none;
-                                color: white;
-                                &:before{
-                                    content: "\f114";
-                                    font-family: FontAwesome;
-                                    color: $prim;  
-                                    padding-right:1vw;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+            
         }
         
         

@@ -6,10 +6,10 @@
         padding-top: 2vh;
         padding-bottom: 2vh;
         .container{
-            @media only screen and (min-width: 576px){
+            @media (min-width: 320px) { 
                 width: 80%;
                 margin: auto;
-            } 
+            }
             
             #adhe{
                 width: 100%;
@@ -24,6 +24,10 @@
                         @include h2;
                         margin-top: 0;
                         width: 50%;
+
+                        @media (min-width: 320px) { 
+                        width: 100%;
+                        }
                     } 
                     #new{
                         p{

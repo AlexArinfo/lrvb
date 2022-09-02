@@ -19,10 +19,6 @@
 
 <span id="infoarticlebis">
 <h1><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-<div class="allinfos">
-<span class="aut"><?php the_author();?></span>
-<span class="cat"><?php the_category(); ?></span>
-</div>
 </span>
 </div>
 </section>

@@ -24,6 +24,16 @@
         
         #fem, #masc, #loisir{
             margin-top: 5vh;
+
+            .st-vertical{
+                @media (min-width: 320px) { 
+                flex-direction: column;
+                }
+
+                @media (min-width: 992px) { 
+                flex-direction: row;
+                }
+            }
             .nav-link{
                 text-decoration: none;
                 text-transform: uppercase;

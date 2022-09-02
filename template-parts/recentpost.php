@@ -16,10 +16,6 @@ while ($the_query -> have_posts()) : $the_query -> the_post();
 <?php the_post_thumbnail('recentpost-thumb'); ?>
 <div class="sideinfos">
 <h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
-<div class="sideinfosbis">
-<span class="aut"><?php the_author();?></span>
-<span class="cat"><?php the_category(); ?></span>
-</div>
 </div>
 
 </article>

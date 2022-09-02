@@ -34,134 +34,172 @@
       line-height: 28px;
       color: #FFFFFF; }
 
-header {
-  padding-top: 4vh;
-  padding-bottom: 1vh; }
-  @media only screen and (max-width: 768px) {
-    header {
-      display: none; } }
-  header #contheader {
-    width: 60%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
-    @media only screen and (min-device-width: 992px) and (max-device-width: 1600px) {
-      header #contheader {
-        width: 70%;
-        margin: auto; } }
-    header #contheader nav {
-      width: 50%; }
-      header #contheader nav ul {
-        justify-content: space-between;
-        display: flex; }
-        header #contheader nav ul li {
-          list-style: none; }
-          header #contheader nav ul li a {
-            font-family: "Anek Tamil";
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 23px;
-            color: #007ec6;
-            text-transform: uppercase;
-            text-decoration: none; }
-            header #contheader nav ul li a:hover {
-              color: #007ec6;
-              font-weight: 400; }
-          header #contheader nav ul li span {
-            position: relative; }
-            header #contheader nav ul li span::before, header #contheader nav ul li span::after {
-              content: "";
-              position: absolute;
-              top: 0;
-              bottom: 0;
-              width: 2px;
-              background-color: #007ec6;
-              transform-origin: center;
-              transform: scaleY(0);
-              transition: transform 0.5s ease; }
-            header #contheader nav ul li span::before {
-              left: -8px; }
-            header #contheader nav ul li span::after {
-              right: -8px; }
-            header #contheader nav ul li span:hover::before, header #contheader nav ul li span:hover::after {
-              transform: scaleY(1); }
-        header #contheader nav ul ul {
-          display: none;
-          background: black;
-          position: absolute;
-          box-shadow: -3px 3px 10px -2px rgba(0, 0, 0, 0.1);
-          border: 1px solid rgba(0, 0, 0, 0.1); }
-          header #contheader nav ul ul li {
-            float: none;
-            position: relative; }
-            header #contheader nav ul ul li a {
-              padding: 15px 30px;
-              border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
-          header #contheader nav ul ul ul {
-            position: absolute;
-            left: 100%;
-            top: 0; }
-    header #contheader a {
-      width: 15%; }
-      header #contheader a img {
-        width: 50%;
-        height: auto; }
-  header .toggle-menu {
-    width: 28px;
-    height: 28px;
-    position: absolute; }
-    @media only screen and (max-width: 768px) {
-      header .toggle-menu {
-        display: block; } }
-    header .toggle-menu span {
-      position: relative;
-      display: block;
+@media (min-width: 320px) {
+  header {
+    padding-top: 6vh; } }
+
+@media (min-width: 1200px) {
+  header {
+    padding-top: 4vh;
+    padding-bottom: 1vh; } }
+
+header nav {
+  width: 60%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  display: flex; }
+  @media (min-width: 320px) {
+    header nav {
+      display: none;
+      width: 80%; } }
+  @media (min-width: 1200px) {
+    header nav {
+      width: 80%;
+      display: flex; } }
+  @media (min-width: 1200px) {
+    header nav a {
+      width: 10% !important; } }
+  @media (min-width: 320px) {
+    header nav a {
+      display: flex;
+      justify-content: center;
+      width: 100%; } }
+  @media (min-width: 1200px) {
+    header nav a img {
+      width: 100% !important;
+      height: auto !important; } }
+  @media (min-width: 320px) {
+    header nav a img {
+      width: 40%;
+      height: auto; } }
+  @media (min-width: 1200px) {
+    header nav ul {
+      width: 65% !important;
+      justify-content: space-between !important;
+      display: flex !important;
+      padding-left: 0 !important;
+      flex-direction: row !important; } }
+  @media (min-width: 320px) {
+    header nav ul {
+      width: 100%;
+      flex-direction: column; } }
+  header nav ul li {
+    list-style: none; }
+    @media (min-width: 1200px) {
+      header nav ul li {
+        width: 100%; } }
+    @media (min-width: 320px) {
+      header nav ul li {
+        padding-top: 1vh;
+        padding-bottom: 1vh; } }
+    header nav ul li a {
+      font-family: "Anek Tamil";
+      font-style: normal;
+      font-weight: 500;
+      line-height: 23px;
+      color: #007ec6;
+      text-transform: uppercase;
+      text-decoration: none; }
+      @media (min-width: 1200px) {
+        header nav ul li a {
+          font-size: 1em !important; } }
+      header nav ul li a:hover {
+        color: #007ec6;
+        font-weight: 400; }
+      @media (min-width: 320px) {
+        header nav ul li a {
+          font-size: 1.2em; } }
+    header nav ul li span {
+      position: relative; }
+      header nav ul li span::before, header nav ul li span::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background-color: #007ec6;
+        transform-origin: center;
+        transform: scaleY(0);
+        transition: transform 0.5s ease; }
+      header nav ul li span::before {
+        left: -8px; }
+      header nav ul li span::after {
+        right: -8px; }
+      header nav ul li span:hover::before, header nav ul li span:hover::after {
+        transform: scaleY(1); }
+  header nav ul ul {
+    display: none;
+    background: black;
+    position: absolute;
+    box-shadow: -3px 3px 10px -2px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1); }
+    header nav ul ul li {
+      float: none;
+      position: relative; }
+      header nav ul ul li a {
+        padding: 15px 30px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+    header nav ul ul ul {
+      position: absolute;
+      left: 100%;
+      top: 0; }
+
+.toggle-menu {
+  width: 28px;
+  height: 28px;
+  position: absolute; }
+  @media (min-width: 320px) {
+    .toggle-menu {
+      display: block; } }
+  .toggle-menu span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #007ec6;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px; }
+    .toggle-menu span:after, .toggle-menu span:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 9px; }
+    .toggle-menu span:after {
+      top: 18px;
       width: 100%;
       height: 2px;
       background-color: #007ec6;
       transition: all 0.3s;
       backface-visibility: hidden;
       border-radius: 2px; }
-      header .toggle-menu span:after, header .toggle-menu span:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 9px; }
-      header .toggle-menu span:after {
-        top: 18px;
-        width: 100%;
-        height: 2px;
-        background-color: #007ec6;
-        transition: all 0.3s;
-        backface-visibility: hidden;
-        border-radius: 2px; }
-      header .toggle-menu span:before {
-        width: 100%;
-        height: 2px;
-        background-color: #007ec6;
-        transition: all 0.3s;
-        backface-visibility: hidden;
-        border-radius: 2px; }
-    header .toggle-menu.on span {
-      background-color: transparent; }
-      header .toggle-menu.on span:before {
-        transform: rotate(45deg) translate(-1px, 0); }
-      header .toggle-menu.on span:after {
-        transform: rotate(-45deg) translate(6px, -7px); }
-  header .tog-menu {
-    display: none; }
-    @media only screen and (max-width: 768px) {
-      header .tog-menu {
-        display: block; } }
-    header .tog-menu a {
-      margin-top: 25px;
-      margin-left: 10px;
-      position: relative; }
-  header img {
-    height: 97px;
-    width: 136px; }
+    .toggle-menu span:before {
+      width: 100%;
+      height: 2px;
+      background-color: #007ec6;
+      transition: all 0.3s;
+      backface-visibility: hidden;
+      border-radius: 2px; }
+  .toggle-menu.on span {
+    background-color: transparent; }
+    .toggle-menu.on span:before {
+      transform: rotate(45deg) translate(-1px, 0); }
+    .toggle-menu.on span:after {
+      transform: rotate(-45deg) translate(6px, -7px); }
+
+@media (min-width: 320px) {
+  .tog-menu {
+    display: block; } }
+
+@media (min-width: 1200px) {
+  .tog-menu {
+    display: none; } }
+
+.tog-menu a {
+  margin-top: 25px;
+  margin-left: 10px;
+  position: relative; }
 
 .tog {
   height: 10vh;
@@ -392,46 +430,6 @@ header {
               @media only screen and (max-width: 1600px) {
                 #index #actus .container #allarticlesbis article .textearticle p a {
                   font-size: 1em; } }
-          #index #actus .container #allarticlesbis article .textearticle hr {
-            border: 1px solid #EFEFEF; }
-          #index #actus .container #allarticlesbis article .textearticle .allinfos {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline; }
-            #index #actus .container #allarticlesbis article .textearticle .allinfos .aut {
-              font-family: 'Jost';
-              font-style: normal;
-              font-weight: 300;
-              font-size: 12px;
-              line-height: 17px;
-              color: #00171F; }
-              @media only screen and (max-width: 1600px) {
-                #index #actus .container #allarticlesbis article .textearticle .allinfos .aut {
-                  font-size: 1em; } }
-              #index #actus .container #allarticlesbis article .textearticle .allinfos .aut:before {
-                content: "\f2c0";
-                font-family: FontAwesome;
-                color: #007ec6;
-                padding-right: 1vw; }
-            #index #actus .container #allarticlesbis article .textearticle .allinfos .cat ul {
-              padding-left: 0px;
-              list-style: none; }
-              #index #actus .container #allarticlesbis article .textearticle .allinfos .cat ul li a {
-                font-family: 'Jost';
-                font-style: normal;
-                font-weight: 300;
-                font-size: 12px;
-                line-height: 17px;
-                text-decoration: none;
-                color: #00171F; }
-                #index #actus .container #allarticlesbis article .textearticle .allinfos .cat ul li a:before {
-                  content: "\f114";
-                  font-family: FontAwesome;
-                  color: #007ec6;
-                  padding-right: 1vw; }
-                @media only screen and (max-width: 1600px) {
-                  #index #actus .container #allarticlesbis article .textearticle .allinfos .cat ul li a {
-                    font-size: 1em; } }
     #index #actus .container form {
       text-align: right; }
       #index #actus .container form button {
@@ -472,6 +470,9 @@ header {
     justify-content: space-between;
     padding-left: 3%;
     border-left: 5px #007ec6 solid; }
+  @media (min-width: 320px) {
+    #index #zelive .container iframe {
+      width: 100%; } }
   #index #resultats {
     height: 200px;
     background-image: url("http://localhost:8888/lrvb/wp-content/uploads/2022/06/lrvbvolley-scaled.jpg");
@@ -605,7 +606,7 @@ header {
   #club #adhesion {
     padding-top: 2vh;
     padding-bottom: 2vh; }
-    @media only screen and (min-width: 576px) {
+    @media (min-width: 320px) {
       #club #adhesion .container {
         width: 80%;
         margin: auto; } }
@@ -631,6 +632,9 @@ header {
           border-left: 5px #007ec6 solid;
           margin-top: 0;
           width: 50%; }
+          @media (min-width: 320px) {
+            #club #adhesion .container #adhe article h2 {
+              width: 100%; } }
         #club #adhesion .container #adhe article #new p {
           font-family: 'Jost';
           font-style: normal;
@@ -884,10 +888,11 @@ header {
         @media (min-width: 320px) {
           #infospratiques .container .cardsinfos .containercard {
             width: 100%;
-            margin-bottom: 2vh; } }
+            margin-bottom: 5vh; } }
         @media (min-width: 992px) {
           #infospratiques .container .cardsinfos .containercard {
-            width: 45%; } }
+            width: 45%;
+            margin-bottom: 7vh; } }
         #infospratiques .container .cardsinfos .containercard .card {
           min-height: 330px;
           width: 90%;
@@ -1075,7 +1080,8 @@ header {
       width: 12%; }
       @media (min-width: 320px) {
         .heroupsingle #infosarticle .date {
-          margin-right: 5vh; } }
+          margin-right: 5vh;
+          width: 22%; } }
       .heroupsingle #infosarticle .date #dm {
         display: flex;
         flex-direction: column; }
@@ -1123,38 +1129,6 @@ header {
           text-align: center;
           color: #FFFFFF;
           text-decoration: none; }
-      .heroupsingle #infosarticle #infoarticlebis .allinfos {
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
-        width: 60%; }
-        .heroupsingle #infosarticle #infoarticlebis .allinfos .aut {
-          font-family: 'Jost';
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 23px;
-          color: white; }
-          .heroupsingle #infosarticle #infoarticlebis .allinfos .aut:before {
-            content: "\f017";
-            font-family: FontAwesome;
-            color: #007ec6;
-            padding-right: 1vw; }
-        .heroupsingle #infosarticle #infoarticlebis .allinfos .cat ul {
-          padding-left: 0px;
-          list-style: none; }
-          .heroupsingle #infosarticle #infoarticlebis .allinfos .cat ul li a {
-            font-family: 'Jost';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 17px;
-            text-decoration: none;
-            color: white; }
-            .heroupsingle #infosarticle #infoarticlebis .allinfos .cat ul li a:before {
-              content: "\f114";
-              font-family: FontAwesome;
-              color: #007ec6;
-              padding-right: 1vw; }
 
 #single {
   margin-top: 2%; }
@@ -1356,6 +1330,12 @@ header {
       width: 70%; } }
   #equipe .container #fem, #equipe .container #masc, #equipe .container #loisir {
     margin-top: 5vh; }
+    @media (min-width: 320px) {
+      #equipe .container #fem .st-vertical, #equipe .container #masc .st-vertical, #equipe .container #loisir .st-vertical {
+        flex-direction: column; } }
+    @media (min-width: 992px) {
+      #equipe .container #fem .st-vertical, #equipe .container #masc .st-vertical, #equipe .container #loisir .st-vertical {
+        flex-direction: row; } }
     #equipe .container #fem .nav-link, #equipe .container #masc .nav-link, #equipe .container #loisir .nav-link {
       text-decoration: none;
       text-transform: uppercase;
@@ -1401,7 +1381,12 @@ header {
   padding-bottom: 7vh;
   width: 100%;
   display: flex; }
+  @media (min-width: 320px) {
+    #inscription #blocinscriptions {
+      width: 80%;
+      margin: auto; } }
   #inscription #blocinscriptions #leftinscription {
+    display: none;
     width: 50%;
     height: 485px;
     clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
@@ -1409,15 +1394,11 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top; }
-    @media only screen and (min-width: 576px) {
-      #inscription #blocinscriptions #leftinscription {
-        display: none; } }
   #inscription #blocinscriptions #rightinscription {
     width: 50%; }
-    @media only screen and (min-width: 576px) {
+    @media (min-width: 320px) {
       #inscription #blocinscriptions #rightinscription {
-        width: 80%;
-        margin: auto; } }
+        width: 100%; } }
     #inscription #blocinscriptions #rightinscription h2 {
       width: 100%;
       font-family: 'Jost';
@@ -1453,7 +1434,7 @@ header {
           line-height: 20px;
           text-align: justify;
           color: #007ec6; } }
-      @media only screen and (min-width: 576px) {
+      @media (min-width: 320px) {
         #inscription #blocinscriptions #rightinscription p {
           width: 100%; } }
     #inscription #blocinscriptions #rightinscription form button {
@@ -1569,23 +1550,23 @@ header {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse; }
-  @media only screen and (min-width: 576px) {
+  @media (min-width: 320px) {
     #contact {
       flex-direction: column; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 992px) {
     #contact {
       width: 80%;
       margin: auto; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 992px) {
     #contact #allcontact {
       display: flex;
       justify-content: space-between; } }
   #contact #allcontact #contactform {
     width: 30%; }
-    @media only screen and (max-width: 992px) {
+    @media (min-width: 320px) {
       #contact #allcontact #contactform {
         width: 100%; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 992px) {
       #contact #allcontact #contactform {
         width: 45%; } }
     #contact #allcontact #contactform form input, #contact #allcontact #contactform form textarea {
@@ -1630,10 +1611,10 @@ header {
         color: white; }
   #contact #allcontact #adresse {
     width: 50%; }
-    @media only screen and (max-width: 992px) {
+    @media (min-width: 320px) {
       #contact #allcontact #adresse {
         width: 100%; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 992px) {
       #contact #allcontact #adresse {
         width: 45%; } }
     #contact #allcontact #adresse h2 {
@@ -1679,28 +1660,20 @@ h2 {
   padding-left: 3%;
   border-left: 5px #007ec6 solid; }
 
-@media only screen and (max-width: 1600px) {
-  #sidecont #colart {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; } }
-
 #sidecont #colart article {
   display: flex;
   margin-bottom: 2vh; }
-  @media only screen and (max-width: 768px) {
+  @media (min-width: 320px) {
     #sidecont #colart article {
-      width: 51%; } }
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1600px) {
-    #sidecont #colart article {
-      width: 45%; } }
+      width: 100%; } }
   #sidecont #colart article .sideinfos {
     width: 60%;
     margin: auto;
     margin-top: 0px; }
-    @media only screen and (max-width: 1600px) {
+    @media (min-width: 320px) {
       #sidecont #colart article .sideinfos {
-        width: 50%; } }
+        width: 70%;
+        margin-left: 3vw; } }
     #sidecont #colart article .sideinfos h3 {
       margin-top: 0; }
       #sidecont #colart article .sideinfos h3 a {
@@ -1711,48 +1684,6 @@ h2 {
         line-height: 26px;
         color: #00171F;
         text-decoration: none; }
-    #sidecont #colart article .sideinfos .sideinfosbis {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      width: 50%; }
-      @media only screen and (max-width: 768px) {
-        #sidecont #colart article .sideinfos .sideinfosbis {
-          width: 100%; } }
-      @media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
-        #sidecont #colart article .sideinfos .sideinfosbis {
-          flex-direction: column; } }
-      @media only screen and (min-device-width: 992px) and (max-device-width: 1600px) {
-        #sidecont #colart article .sideinfos .sideinfosbis {
-          width: 100%; } }
-      #sidecont #colart article .sideinfos .sideinfosbis .aut {
-        font-family: 'Jost';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 17px;
-        color: #00171F; }
-        #sidecont #colart article .sideinfos .sideinfosbis .aut:before {
-          content: "\f2c0";
-          font-family: FontAwesome;
-          color: #007ec6;
-          padding-right: 0.5vw; }
-      #sidecont #colart article .sideinfos .sideinfosbis .cat ul {
-        padding-left: 0px;
-        list-style: none; }
-        #sidecont #colart article .sideinfos .sideinfosbis .cat ul li a {
-          font-family: 'Jost';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 12px;
-          line-height: 17px;
-          text-decoration: none;
-          color: #00171F; }
-          #sidecont #colart article .sideinfos .sideinfosbis .cat ul li a:before {
-            content: "\f114";
-            font-family: FontAwesome;
-            color: #007ec6;
-            padding-right: 0.5vw; }
 
 footer {
   background-color: #00171F;
@@ -1787,14 +1718,24 @@ footer {
         line-height: 23px;
         color: white;
         text-transform: uppercase; }
+        @media (min-width: 320px) {
+          footer .container .colfoo h3 {
+            margin-bottom: 0; } }
     footer .container #logfoo a {
       width: 50%; }
+      @media (min-width: 320px) {
+        footer .container #logfoo a {
+          width: 30%;
+          margin: auto; } }
       footer .container #logfoo a img {
         width: 100%;
         height: auto; }
     footer .container #rctart ul, footer .container #part ul {
       padding-left: 0px;
       list-style: none; }
+      @media (min-width: 320px) {
+        footer .container #rctart ul, footer .container #part ul {
+          margin-top: 0; } }
       footer .container #rctart ul li a, footer .container #part ul li a {
         text-decoration: none;
         font-family: 'Jost';
@@ -1846,8 +1787,7 @@ footer {
       justify-content: space-between; }
       @media (min-width: 320px) {
         footer #underfooter .container {
-          width: 80%;
-          flex-direction: row; } }
+          width: 80%; } }
       footer #underfooter .container a {
         font-family: 'Anek Tamil';
         font-style: normal;
@@ -1860,7 +1800,7 @@ footer {
           color: #007ec6; }
         @media (min-width: 320px) {
           footer #underfooter .container a {
-            width: 45%; } }
+            width: 100%; } }
       @media (min-width: 992px) {
         footer #underfooter .container a:nth-child(2) {
           text-align: right; } }

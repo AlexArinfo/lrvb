@@ -6,30 +6,25 @@
     }
     
     #colart{
-        @media only screen and (max-width: 1600px){
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        } 
+       
         article{
             display: flex;
             margin-bottom: 2vh;
+           @media (min-width: 320px) { 
+            width: 100%;
+            }
+           
             
-            @media only screen and (max-width: 768px){
-              width: 51%;
-            } 
-
-            @media only screen and (min-device-width : 768px) and (max-device-width : 1600px){
-                width: 45%;
-                    } 
             .sideinfos{
                 width: 60%;
                 margin: auto;
                 margin-top: 0px;
+               @media (min-width: 320px) { 
+                width: 70%;
+                margin-left: 3vw;
+                }
                 
-                @media only screen and (max-width: 1600px){
-                    width: 50%;
-                } 
+                
                 h3{
                     margin-top: 0;
                     a{
@@ -42,61 +37,7 @@
                         text-decoration: none;
                     }
                 }
-                .sideinfosbis{
-                    display: flex;
-                    align-items: baseline;
-                    justify-content: space-between;
-                    width: 50%;
-                    @media only screen and (max-width: 768px){
-                        width: 100%;
-                    } 
-                    
-                    @media only screen and (min-device-width : 768px) and (max-device-width : 992px){
-                        flex-direction: column;
-                    } 
-
-                    @media only screen and (min-device-width : 992px) and (max-device-width : 1600px){
-                    width: 100%;
-                            } 
-                    .aut{
-                        font-family: 'Jost';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 12px;
-                        line-height: 17px;
-                        color: $sectext;
-                        &:before{
-                            content: "\f2c0";
-                            font-family: FontAwesome;
-                            color: $prim;  
-                            padding-right:0.5vw;
-                        }
-                    }
-                    
-                    .cat{
-                        ul{
-                            padding-left: 0px;
-                            list-style: none;
-                            li{
-                                a{
-                                    font-family: 'Jost';
-                                    font-style: normal;
-                                    font-weight: 400;
-                                    font-size: 12px;
-                                    line-height: 17px;
-                                    text-decoration: none;
-                                    color: $sectext;
-                                    &:before{
-                                        content: "\f114";
-                                        font-family: FontAwesome;
-                                        color: $prim;  
-                                        padding-right:0.5vw;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+                
             }
         }
     }

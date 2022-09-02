@@ -110,59 +110,8 @@
                                         } 
                             }
                         }
-                        hr{
-                            border: 1px solid #EFEFEF;
-                            
-                        }
-                        .allinfos{
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: baseline;
-                            .aut{
-                                font-family: 'Jost';
-                                font-style: normal;
-                                font-weight: 300;
-                                font-size: 12px;
-                                line-height: 17px;
-                                color: $sectext;
-                                @media only screen and (max-width: 1600px){
-                                    font-size: 1em;
-                                            } 
-                                &:before{
-                                    content: "\f2c0";
-                                    font-family: FontAwesome;
-                                    color: $prim;  
-                                    padding-right:1vw;
-                                }
-                            }
-                            
-                            .cat{
-                                ul{
-                                    padding-left: 0px;
-                                    list-style: none;
-                                    li{
-                                        a{
-                                            font-family: 'Jost';
-                                            font-style: normal;
-                                            font-weight: 300;
-                                            font-size: 12px;
-                                            line-height: 17px;
-                                            text-decoration: none;
-                                            color: $sectext;
-                                            &:before{
-                                                content: "\f114";
-                                                font-family: FontAwesome;
-                                                color: $prim;  
-                                                padding-right:1vw;
-                                            }
-                                            @media only screen and (max-width: 1600px){
-                                                font-size: 1em;
-                                                        } 
-                                        }
-                                    }
-                                }
-                            }
-                        }
+                       
+                       
                     }
                 }
             }
@@ -183,6 +132,14 @@
     #zelive{
         h2{
             @include h2;
+        }
+
+        .container{
+           iframe{
+               @media (min-width: 320px) { 
+                width: 100%;
+                }
+            }
         }
     }
     
