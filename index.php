@@ -59,7 +59,7 @@ if (!function_exists('get_field')) return;
                     <section id="actus">
                     <div class="container">
                     <h2>Actualités</h2>
-                    <div id="allarticlesbis">
+                    <div id="allarticles">
                     <?php
                     $recentPosts = new WP_Query();
                     $recentPosts->query('showposts=3');
@@ -82,20 +82,16 @@ wp_reset_postdata();
                     <section id="zelive">
                         <div class="container">
                         <h2>ZeLive</h2>
-                        <p><?php the_field( 'zelive' ); ?></p>
+                        <?php the_field( 'zelive' ); ?>
+<div id="linkzelive">
+  <a href="https://apps.apple.com/fr/app/zelive/id1578515024"><img src="http://localhost:8888/lrvb/wp-content/uploads/2022/09/icone-app-store.png" alt=""></a>
+  <img src="http://localhost:8888/lrvb/wp-content/uploads/2022/09/icone-play-store.png" alt=""><a href=""></a>
+</div>
 
                         </div>
                     </section>
 
-                    <section id="resultats">
-                        <div class="container">
-                            <h2>Résultats des derniers matchs</h2>
-                            <?php $resultats = get_field( 'resultats' ); ?>
-<?php if ( $resultats ) : ?>
-	<a href="<?php echo esc_url( $resultats['url'] ); ?>" target="<?php echo esc_attr( $resultats['target'] ); ?>"><?php echo esc_html( $resultats['title'] ); ?></a>
-<?php endif; ?>
-                        </div>
-                    </section>
+                  
                    
                     <section id="partenaires">
                     <div class="container">

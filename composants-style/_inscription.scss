@@ -5,7 +5,7 @@
         width: 100%;
         display: flex;
         #leftinscription{
-            @media only screen and (max-width: 992px){
+            @media only screen and (min-width: 576px){
              display: none;   
             }
             width: 50%;
@@ -19,7 +19,7 @@
         
         #rightinscription{
             width: 50%;
-            @media only screen and (max-width: 992px){
+            @media only screen and (min-width: 576px){
              width: 80%;  
              margin: auto; 
             }
@@ -31,7 +31,7 @@
                 width: 80%;
                 margin: left;
                 @include p;   
-                @media only screen and (max-width: 992px){
+                @media only screen and (min-width: 576px){
                  width: 100%;   
                 }         
             }

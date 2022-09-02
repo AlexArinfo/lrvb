@@ -1,121 +1,136 @@
-#actus{
+#actus,#blog{
     .container{
-        @media only screen and (min-device-width : 768px) and (max-device-width : 992px){
-            width: 80%;
-        } 
-    }
-}
-#allarticles{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    article{
-        background-color: white;
-        width: 26%;
-        margin-bottom: 2%;
-        @media only screen and (max-width: 768px){
-            width: 100%;   
+       @media (min-width: 320px) { 
+        width: 80%;
+        margin: auto;
         }
-        @media only screen and (min-device-width : 768px) and (max-device-width : 993px){
-            width: 45%;
-        } 
-        
-        @media only screen and (min-device-width : 992px) and (max-device-width : 1600px){
-            width: 30%;
-        } 
-        
-        .imgarticle{
-            img{
+        #allarticles{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+           @media (min-width: 320px) { 
+            flex-direction: column;
+            }
+
+            @media (min-width: 992px) { 
+            flex-direction: row;
+            }
+            article{
+                background-color: white;
+                width: 31%;
+                min-height: 500px;
+                margin-bottom: 2%;
+               @media (min-width: 320px) { 
                 width: 100%;
-                height: auto;
-            }
-        }
-        .textearticle{
-            width: 80%;
-            margin: auto;
-            .date{
-                font-family: 'Jost';
-                text-transform: uppercase;
-                font-weight: 300;
-                font-size: 16px;
-                line-height: 23px;
-                color: $primtext;
-                
-                &:before{
-                    content: "\f017";
-                    font-family: FontAwesome;
-                    color: $prim;
                 }
-            }
-            h3{
-                a{
-                    font-family: 'Jost';
-                    text-transform: uppercase;
-                    font-weight: 400;
-                    font-size: 1em;
-                    line-height: 26px;
-                    color: $sectext;
-                    text-decoration: none;
+
+                @media (min-width: 992px) { 
+                width: 45%;
                 }
-            }
-            p{
-                @include p;
-                a{
-                    font-family: 'Jost';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 20px;
-                    color: $prim;  
-                    text-decoration: none;
+
+                @media (min-width: 1200px) { 
+                width: 28%;
+                min-height: 480px;
                 }
-            }
-            hr{
-                border: 1px solid #EFEFEF;
                 
-            }
-            .allinfos{
-                display: flex;
-                justify-content: space-between;
-                align-items: baseline;
-                width: 60%;
                 
-                @media only screen and (min-device-width : 992px) and (max-device-width : 1600px){
-                    width: 100%;
-                } 
-                .aut{
-                    font-family: 'Jost';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 12px;
-                    line-height: 17px;
-                    color: $sectext;
-                    &:before{
-                        content: "\f2c0";
-                        font-family: FontAwesome;
-                        color: $prim;  
-                        padding-right:1vw;
+                .imgarticle{
+                   
+                    img{
+                        width: 100%;
+                        height: auto; 
+                        @media (min-width: 1200px) { 
+                            min-height: 220px;
+                            object-fit: cover;
+                        }
                     }
                 }
-                
-                .cat{
-                    ul{
-                        padding-left: 0px;
-                        list-style: none;
-                        li{
-                            a{
-                                font-family: 'Jost';
-                                font-style: normal;
-                                font-weight: 400;
-                                font-size: 12px;
-                                line-height: 17px;
-                                text-decoration: none;
-                                color: $sectext;
-                                &:before{
-                                    content: "\f114";
-                                    font-family: FontAwesome;
-                                    color: $prim;  
-                                    padding-right:1vw;
+                .textearticle{
+                    width: 80%;
+                    margin: auto;
+                    .date{
+                        font-family: 'Jost';
+                        text-transform: uppercase;
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 23px;
+                        color: $primtext;
+                        
+                        &:before{
+                            content: "\f017";
+                            font-family: FontAwesome;
+                            color: $prim;
+                        }
+                    }
+                    h3{
+                        a{
+                            font-family: 'Jost';
+                            text-transform: uppercase;
+                            font-weight: 400;
+                            font-size: 1em;
+                            line-height: 26px;
+                            color: $sectext;
+                            text-decoration: none;
+                        }
+                    }
+                    p{
+                        @include p;
+                        a{
+                            font-family: 'Jost';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: $prim;  
+                            text-decoration: none;
+                        }
+                    }
+                    hr{
+                        border: 1px solid #EFEFEF;
+                        
+                    }
+                    .allinfos{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: baseline;
+                        width: 100%;
+                        
+                       
+                        .aut{
+                            font-family: 'Jost';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 17px;
+                            color: $sectext;
+                            &:before{
+                                content: "\f2c0";
+                                font-family: FontAwesome;
+                                color: $prim;  
+                                padding-right:1vw;
+                            }
+                        }
+                        
+                        .cat{
+                            ul{
+                                padding-left: 0px;
+                                list-style: none;
+                                li{
+                                    a{
+                                        font-family: 'Jost';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 12px;
+                                        line-height: 17px;
+                                        text-decoration: none;
+                                        color: $sectext;
+                                        &:before{
+                                            content: "\f114";
+                                            font-family: FontAwesome;
+                                            color: $prim;  
+                                            padding-right:1vw;
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -125,6 +140,7 @@
         }
     }
 }
+
 
 
 
