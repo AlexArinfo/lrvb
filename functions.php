@@ -51,8 +51,14 @@ function wpdocs_theme_setup() {
 //fin
 
 
+function load_js_homemin(){
+    if (is_page (7)){
+        wp_enqueue_script('scripthomemin', get_template_directory_uri() . '/javascript/scripthome.min.js'); 
+    }
+}
+add_action( 'wp_enqueue_scripts', 'load_js_homemin' );
 
-//	ajout style et script
+
 
 function monscript() {
     wp_enqueue_style( 'style', get_stylesheet_uri() );
@@ -67,20 +73,33 @@ function monscript() {
         wp_register_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js', false, '');
         wp_enqueue_script('jquery');
     }
-    wp_enqueue_script('jquerysmarttabjq', 'https://cdn.jsdelivr.net/npm/jquery-smarttab@4/dist/js/jquery.smartTab.min.js', false, '');
     wp_enqueue_script('progressbar', get_template_directory_uri() . '/javascript/progressbar.js');
-    wp_enqueue_script('header', get_template_directory_uri() . '/javascript/header.js');
-    
-    wp_enqueue_script('slideshow', get_template_directory_uri() . '/javascript/slideshow.js');
-    wp_enqueue_script('counter', get_template_directory_uri() . '/javascript/counter.js');
-    wp_enqueue_script('slickautoplay', get_template_directory_uri() . '/javascript/slickautoplay.js');
-    wp_enqueue_script('jquerysmarttabjs', get_template_directory_uri() . '/javascript/jquerysmarttabjs.js');
-    wp_enqueue_script('galerie', get_template_directory_uri() . '/javascript/galerie.js');
-    
-    
+
     
 }
-add_action( 'wp_enqueue_scripts', 'monscript' );
+add_action( 'wp_enqueue_scripts', 'monscript', 'load_js_assets' );
+
+
+// charge le script galerie dans la page galerie
+function load_js_galerie(){
+    if (is_page (11)){
+        wp_enqueue_script('galerie', get_template_directory_uri() . '/javascript/galerie.js');
+    }
+}
+add_action( 'wp_enqueue_scripts', 'load_js_galerie' );
+// fin charge le script galerie dans la page galerie
+
+
+// charge le script tabsequipe dans la page equipe
+function load_js_equipe(){
+    if (is_page (15)){
+        wp_enqueue_script('jquerysmarttabjq', 'https://cdn.jsdelivr.net/npm/jquery-smarttab@4/dist/js/jquery.smartTab.min.js', false, '');
+        wp_enqueue_script('jquerysmarttabjs', get_template_directory_uri() . '/javascript/jquerysmarttabjs.js');
+
+    }
+}
+add_action( 'wp_enqueue_scripts', 'load_js_equipe' );
+// fin charge le script tabsequipe dans la page equipe
 
 
 
