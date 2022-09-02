@@ -4,9 +4,10 @@
 
 
 <section class="heroupsingle">
-<div class="hero" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>');">
+<div class="hero" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ,'couv' ) ); ?>');">
 
-</div>
+
+
 
 <div id="infosarticle">
 <span class="date">

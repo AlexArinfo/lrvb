@@ -20,8 +20,6 @@ add_filter('show_admin_bar' , 'wpc_show_admin_bar');
 add_theme_support('custom-logo');
 // fin
 
-
-
 //personnaliser l'administration
 add_action('admin_init', 'admin_color_scheme');
 function admin_color_scheme() {
@@ -34,16 +32,11 @@ function admin_color_scheme() {
 }
 //fin
 
-
-
 //ajouter une taille à l'image à la une
 add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
 function wpdocs_theme_setup() {
-    add_image_size( 'home', 1280, 744, false );
     add_image_size( 'slideshow', 1536, 500, true );
-    add_image_size( 'blogpage_thumb', 300, 300, false );
-    add_image_size( 'singleposthumbnail', 500, 500, false );
-    add_image_size( 'singleposthumbnail2', 500, 500, true );
+    add_image_size( 'blogpage_thumb', 350, 250, false );
     add_image_size( 'recentpost-thumb', 100, 100, true );
     add_image_size( 'couv', 1536, 1536, false );
     add_image_size( 'gallery-thumb', 600, 400, true );
@@ -58,14 +51,18 @@ function load_js_homemin(){
 }
 add_action( 'wp_enqueue_scripts', 'load_js_homemin' );
 
-
+function load_css_home(){
+    if (is_page(7)){
+    wp_enqueue_style( 'slickcss', "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" );
+    }
+    add_action('wp_enqueue_style', 'load_css_home');
+}
 
 function monscript() {
-    wp_enqueue_style( 'style', get_stylesheet_uri() );
+    wp_enqueue_style( 'style', get_stylesheet_uri());
     wp_enqueue_style( 'fontawesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" );
     wp_enqueue_style( 'anek', "https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100;200;300;400;500;600&display=swap" );
     wp_enqueue_style( 'jost', "https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" );
-    wp_enqueue_style( 'slickcss', "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" );
     wp_enqueue_style( 'jquerysmarttabcss', "https://cdn.jsdelivr.net/npm/jquery-smarttab@4/dist/css/smart_tab_all.min.css" );
     
     if (!is_admin()) {
