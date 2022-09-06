@@ -1,18 +1,32 @@
-.top {
-  --offset: 50px; 
-  
-  position: sticky;
-  bottom: 20px;      
-  margin-right:10px; 
-  place-self: end;
-  margin-top: calc(100vh + var(--offset));
-  
-  /* visual styling */
-  text-decoration: none;
-  padding: 10px;
-  font-family: sans-serif;
-  color: #fff;
-  background: #000;
-  border-radius: 100px;
-  white-space: nowrap;
+.go-top {
+    width: 70px;
+    height: 70px ;
+    position:fixed;
+    bottom: 20%;
+    right: 2%;
+    display:flex;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    flex-direction: column;
+    align-items: center;
+    img{
+        width: 100%;
+        height: auto;
+        &:hover{
+            animation:rotate-center 1s linear both;
+            @keyframes rotate-center{0%{transform:rotate(0)}100%{transform:rotate(360deg)}};
+        }
+    }
+    p{
+        color: white;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0;
+    }
+    
 }
+
+

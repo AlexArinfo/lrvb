@@ -83,43 +83,47 @@ if (!function_exists('get_field')) return;
         <h2>ZeLive</h2>
         <?php the_field( 'zelive' ); ?>
         <div id="linkzelive">
-        <a href="https://apps.apple.com/fr/app/zelive/id1578515024"><img src="http://localhost:8888/lrvb/wp-content/uploads/2022/09/icone-app-store.png" alt=""></a>
-        <img src="http://localhost:8888/lrvb/wp-content/uploads/2022/09/icone-play-store.png" alt=""><a href=""></a>
+        <a href="https://apps.apple.com/fr/app/zelive/id1578515024"><img src="https://testarinfo.fr/lrvb/wp-content/uploads/2022/09/icone-app-store.png" alt=""></a>
+        <a href="https://play.google.com/store/apps/details?id=tv.zelive.app"><img src="https://testarinfo.fr/lrvb/wp-content/uploads/2022/09/icone-play-store.png" alt=""></a>
         </div>
-        
+        </section>
         
         
         
         
         <section id="partenaires">
-        <div class="container">
         <h2>Nos partenaires</h2>
-        <div class="autoplay slick">
-        <div class="slide">
-        <img src="https://dummyimage.com/300/000000/fff&text=1" alt="" class="img-responsive" />
-        <h1>slide 1</h1>
+        <div class="customer-logos slider">
+        <div class="slide"><img src="https://testarinfo.fr/lrvb/wp-content/uploads/2022/09/logo-tissu-du-renard.jpeg">
         </div>
-        <div class="slide">
-        <img src="https://dummyimage.com/300/000000/fff&text=2" alt="" class="img-responsive" />
-        <h1>slide 2</h1>
+        
+        <div class="slide"><img src="https://testarinfo.fr/lrvb/wp-content/uploads/2022/09/logo-rev-evas-yon.jpeg">
         </div>
-        <div class="slide">
-        <img src="https://dummyimage.com/300/000000/fff&text=3" alt="" class="img-responsive" />
-        <h1>slide 3</h1>
+        
+        <div class="slide"><img src="https://testarinfo.fr/lrvb/wp-content/uploads/2022/09/logo-2021-lrsy-ville.jpeg">
         </div>
-        <div class="slide">
-        <img src="https://dummyimage.com/300/000000/fff&text=4" alt="" class="img-responsive" />
-        <h1>slide 4</h1>
+        
+        <div class="slide"><img src="https://testarinfo.fr/lrvb/wp-content/uploads/2022/09/le-grand-caf.png">
         </div>
-        <div class="slide">
-        <img src="https://dummyimage.com/300/000000/fff&text=5" alt="" class="img-responsive" />
-        <h1>slide 5</h1>
+        
+        <div class="slide"><img src="https://testarinfo.fr/lrvb/wp-content/uploads/2022/09/img-5027.jpeg">
         </div>
+        
+        <div class="slide"><img src="https://testarinfo.fr/lrvb/wp-content/uploads/2022/09/crescendo.jpeg">
+        </div>
+        
+        <div class="slide"><img src="https://testarinfo.fr/lrvb/wp-content/uploads/2022/09/cmo.jpeg">
+        </div>
+        
+        <div class="slide"><img src="https://testarinfo.fr/lrvb/wp-content/uploads/2022/09/bailly.jpeg">
         </div>
         </div>
         </section>
         
         </main>
-        <a href="#" class="top">Back to Top &#8593;</a>
-       
+        
+        <div class="go-top">
+        <img src="https://testarinfo.fr/lrvb/wp-content/uploads/2022/04/Volleyball.png" alt="">
+        <p>Smash!</p>
+        </div>
         <?php get_footer(); ?> 
