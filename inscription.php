@@ -10,9 +10,7 @@ get_template_part( './template-parts/heroup');
 
 
 <div id="blocinscriptions">
-<div id="leftinscription">
 
-</div>
 <div id="rightinscription">
 <h2>Inscriptions de la saison 2021/2022, voici les documents utiles</h2>
 <?php if ( have_rows( 'subscribe' ) ) : ?>

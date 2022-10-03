@@ -59,13 +59,13 @@
     line-height: 20px;
     text-align: justify;
     color: $primtext;
-    @media only screen and (max-width: 992px){
+    @media only screen and (min-width: 992px){
         line-height: 1.7;   
         font-size: 1.2em;
     }
     
     a{
-        @media only screen and (max-width: 1600px){
+        @media only screen and (min-width: 1200px){
             font-family: 'Jost';
             font-style: normal;
             font-weight: 500;
@@ -93,7 +93,7 @@
         -webkit-transition: 0.3s ease-in-out;
         transition: 0.3s ease-in-out;
         cursor: pointer;
-        @media only screen and (max-width: 1600px){
+        @media only screen and (min-width: 1200px){
             font-size: 13px;
             font-weight: 700;
             text-transform: uppercase;

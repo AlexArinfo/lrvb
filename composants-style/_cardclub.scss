@@ -1,75 +1,76 @@
 #infospratiques{
     padding-bottom: 2vh;
     .container{
-        width: 60%;
+        width: 60% !important;
         margin: auto;
         
-       @media (min-width: 320px) { 
+        @media (min-width: 320px) { 
             width: 80%;
         }
+        
         h2{
             @include h2;
             width: 16%;
-          @media (min-width: 320px) { 
-           width: 100%;
+            @media (min-width: 320px) { 
+                width: 100%;
+            }
         }
-    }
-            .cardsinfos{
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-               @media (min-width: 320px) { 
+        .cardsinfos{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            @media (min-width: 320px) { 
                 flex-direction: column;
-                }
-
-                @media (min-width: 992px) { 
+            }
+            
+            @media (min-width: 992px) { 
                 flex-direction: row;
-                }
-                .containercard{
-                    width: 20%;
-                   @media (min-width: 320px) { 
+            }
+            .containercard{
+                width: 20%;
+                @media (min-width: 320px) { 
                     width: 100%;
                     margin-bottom: 5vh;
-                    } 
-                    @media (min-width: 992px) { 
+                } 
+                @media (min-width: 992px) { 
                     width: 45%;
                     margin-bottom: 7vh;
+                }
+                .card{
+                    min-height: 330px;
+                    width: 90%;
+                    margin: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border: solid 1px #012636;
+                    padding: 2vh;
+                    border-radius: 30px;
+                    background-color: #012636;
+                    justify-content: space-around;
+                    
+                    
+                    img{
+                        width: 15%;
+                        height: auto;
                     }
-                                    .card{
-                                        min-height: 330px;
-                                        width: 90%;
-                                        margin: auto;
-                                        display: flex;
-                                        flex-direction: column;
-                                        align-items: center;
-                                        border: solid 1px #012636;
-                                        padding: 2vh;
-                                        border-radius: 30px;
-                                        background-color: #012636;
-                                        justify-content: space-around;
-                                        
-                                      
-                                            img{
-                                                width: 15%;
-                                                height: auto;
-                                            }
-                                            h3{
-                                                @include h3;
-                                                text-align: center;
-                                                color: white;
-                                            }
-                                            p{
-                                                @include p;
-                                                color: white;
-                                            }
-                                            
-                                            form{
-                                                @include button;
-                                            }
-                                            
-                                        }
-                                        
-                                    }
-                                }
-                            }
-                        }
+                    h3{
+                        @include h3;
+                        text-align: center;
+                        color: white;
+                    }
+                    p{
+                        @include p;
+                        color: white;
+                    }
+                    
+                    form{
+                        @include button;
+                    }
+                    
+                }
+                
+            }
+        }
+    }
+}

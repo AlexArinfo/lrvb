@@ -6,16 +6,18 @@
         padding-top: 2vh;
         padding-bottom: 2vh;
         .container{
+            margin: auto;
+            width: 60% !important;
+           
             @media (min-width: 320px) { 
-                width: 80%;
-                margin: auto;
+                width: 80% !important;
+               
             }
+
             
             #adhe{
                 width: 100%;
                 article{
-                    width: 60%;
-                    margin: auto;
                     background-color: #ffffffb3;
                     @media only screen and (max-width: 1600px){
                         width: 100%;

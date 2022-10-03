@@ -117,7 +117,8 @@ header nav {
       flex-direction: column;
       padding-left: 0; } }
   header nav ul li {
-    list-style: none; }
+    list-style: none;
+    text-align: center; }
     @media (min-width: 1200px) {
       header nav ul li {
         width: 100%; } }
@@ -299,13 +300,16 @@ header nav {
   #index .container {
     width: 50%;
     margin: auto;
-    padding-top: 3vh;
+    padding-top: 1vh;
     padding-bottom: 1vh;
     background-color: #ffffffb3; }
     @media (min-width: 320px) {
       #index .container {
         width: 80%;
         padding-bottom: 2vh; } }
+    @media (min-width: 1200px) {
+      #index .container {
+        padding-top: 3vh; } }
     #index .container #left {
       width: 100%; }
       #index .container #left h2 {
@@ -327,11 +331,11 @@ header nav {
         line-height: 20px;
         text-align: justify;
         color: #9b9b9b; }
-        @media only screen and (max-width: 992px) {
+        @media only screen and (min-width: 992px) {
           #index .container #left p {
             line-height: 1.7;
             font-size: 1.2em; } }
-        @media only screen and (max-width: 1600px) {
+        @media only screen and (min-width: 1200px) {
           #index .container #left p a {
             font-family: 'Jost';
             font-style: normal;
@@ -410,11 +414,11 @@ header nav {
             line-height: 20px;
             text-align: justify;
             color: #9b9b9b; }
-            @media only screen and (max-width: 992px) {
+            @media only screen and (min-width: 992px) {
               #index #actus .container #allarticlesbis article .textearticle p {
                 line-height: 1.7;
                 font-size: 1.2em; } }
-            @media only screen and (max-width: 1600px) {
+            @media only screen and (min-width: 1200px) {
               #index #actus .container #allarticlesbis article .textearticle p a {
                 font-family: 'Jost';
                 font-style: normal;
@@ -449,7 +453,7 @@ header nav {
         padding: 2px 12px;
         transition: 0.3s ease-in-out;
         cursor: pointer; }
-        @media only screen and (max-width: 1600px) {
+        @media only screen and (min-width: 1200px) {
           #index #actus .container form button {
             font-size: 13px;
             font-weight: 700;
@@ -479,45 +483,24 @@ header nav {
       width: 100%; } }
   @media (min-width: 320px) {
     #index #zelive .container #linkzelive {
-      width: 80%; } }
+      width: 80%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline; } }
   @media (min-width: 1200px) {
     #index #zelive .container #linkzelive {
       padding-top: 2%;
-      display: flex;
       width: 40%;
-      margin: auto;
-      justify-content: space-between;
-      align-items: baseline; } }
+      margin: auto; } }
   #index #zelive .container #linkzelive a {
     width: 40%; }
     #index #zelive .container #linkzelive a img {
       width: 100%;
       height: auto; }
-  #index #resultats {
-    height: 200px;
-    background-image: url("http://localhost:8888/lrvb/wp-content/uploads/2022/06/lrvbvolley-scaled.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; }
-    #index #resultats .container {
-      display: block; }
-      #index #resultats .container h2 {
-        width: 100%;
-        font-family: 'Jost';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 35px;
-        color: #00171F;
-        justify-content: space-between;
-        padding-left: 3%;
-        border-left: 5px #007ec6 solid;
-        color: white; }
-      #index #resultats .container a {
-        font-family: 'Anek Tamil', sans-serif;
-        font-style: normal;
-        text-decoration: none;
-        color: white; }
+      @media (min-width: 320px) {
+        #index #zelive .container #linkzelive a img {
+          width: 100%; } }
   #index #partenaires .slider {
     margin-top: 5vh; }
   #index #partenaires h2 {
@@ -546,11 +529,10 @@ header nav {
 
 #slideshow {
   width: 100%;
-  height: 60vh;
   position: relative; }
   @media (min-width: 320px) {
     #slideshow {
-      height: 70vh; } }
+      height: 60vh; } }
   #slideshow img {
     position: absolute;
     width: 100%;
@@ -629,110 +611,110 @@ header nav {
   #club #adhesion {
     padding-top: 2vh;
     padding-bottom: 2vh; }
-    @media (min-width: 320px) {
-      #club #adhesion .container {
-        width: 80%;
-        margin: auto; } }
-    #club #adhesion .container #adhe {
-      width: 100%; }
-      #club #adhesion .container #adhe article {
-        width: 60%;
-        margin: auto;
-        background-color: #ffffffb3; }
-        @media only screen and (max-width: 1600px) {
-          #club #adhesion .container #adhe article {
-            width: 100%; } }
-        #club #adhesion .container #adhe article h2 {
-          width: 100%;
-          font-family: 'Jost';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 24px;
-          line-height: 35px;
-          color: #00171F;
-          justify-content: space-between;
-          padding-left: 3%;
-          border-left: 5px #007ec6 solid;
-          margin-top: 0;
-          width: 50%; }
-          @media (min-width: 320px) {
-            #club #adhesion .container #adhe article h2 {
+    #club #adhesion .container {
+      margin: auto;
+      width: 60% !important; }
+      @media (min-width: 320px) {
+        #club #adhesion .container {
+          width: 80% !important; } }
+      #club #adhesion .container #adhe {
+        width: 100%; }
+        #club #adhesion .container #adhe article {
+          background-color: #ffffffb3; }
+          @media only screen and (max-width: 1600px) {
+            #club #adhesion .container #adhe article {
               width: 100%; } }
-        #club #adhesion .container #adhe article #new p {
-          font-family: 'Jost';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 1em;
-          line-height: 20px;
-          text-align: justify;
-          color: #9b9b9b; }
-          @media only screen and (max-width: 992px) {
-            #club #adhesion .container #adhe article #new p {
-              line-height: 1.7;
-              font-size: 1.2em; } }
-          @media only screen and (max-width: 1600px) {
-            #club #adhesion .container #adhe article #new p a {
-              font-family: 'Jost';
-              font-style: normal;
-              font-weight: 500;
-              font-size: 1.2em;
-              line-height: 20px;
-              text-align: justify;
-              color: #007ec6; } }
-        #club #adhesion .container #adhe article #new a {
-          font-family: 'Jost';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 20px;
-          color: #007ec6;
-          text-decoration: none; }
-        #club #adhesion .container #adhe article #old p {
-          font-family: 'Jost';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 1em;
-          line-height: 20px;
-          text-align: justify;
-          color: #9b9b9b; }
-          @media only screen and (max-width: 992px) {
-            #club #adhesion .container #adhe article #old p {
-              line-height: 1.7;
-              font-size: 1.2em; } }
-          @media only screen and (max-width: 1600px) {
-            #club #adhesion .container #adhe article #old p a {
-              font-family: 'Jost';
-              font-style: normal;
-              font-weight: 500;
-              font-size: 1.2em;
-              line-height: 20px;
-              text-align: justify;
-              color: #007ec6; } }
-        #club #adhesion .container #adhe article #old form button {
-          font-family: "Jost";
-          font-style: normal;
-          font-weight: 300;
-          font-size: 1.125em;
-          line-height: 1.625em;
-          background-color: #007ec6;
-          color: white;
-          border: 1px solid #007EC6;
-          border-radius: 15px;
-          padding: 2px 12px;
-          transition: 0.3s ease-in-out;
-          cursor: pointer; }
-          @media only screen and (max-width: 1600px) {
-            #club #adhesion .container #adhe article #old form button {
-              font-size: 13px;
-              font-weight: 700;
-              text-transform: uppercase;
-              letter-spacing: .8px;
-              padding: 15px 33px;
-              display: inline-block;
-              -webkit-appearance: none; } }
-          #club #adhesion .container #adhe article #old form button:hover {
-            background-color: white;
-            color: #007ec6; }
+          #club #adhesion .container #adhe article h2 {
+            width: 100%;
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 35px;
+            color: #00171F;
+            justify-content: space-between;
+            padding-left: 3%;
+            border-left: 5px #007ec6 solid;
+            margin-top: 0;
+            width: 50%; }
+            @media (min-width: 320px) {
+              #club #adhesion .container #adhe article h2 {
+                width: 100%; } }
+          #club #adhesion .container #adhe article #new p {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1em;
+            line-height: 20px;
+            text-align: justify;
+            color: #9b9b9b; }
+            @media only screen and (min-width: 992px) {
+              #club #adhesion .container #adhe article #new p {
+                line-height: 1.7;
+                font-size: 1.2em; } }
+            @media only screen and (min-width: 1200px) {
+              #club #adhesion .container #adhe article #new p a {
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.2em;
+                line-height: 20px;
+                text-align: justify;
+                color: #007ec6; } }
+          #club #adhesion .container #adhe article #new a {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #007ec6;
+            text-decoration: none; }
+          #club #adhesion .container #adhe article #old p {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1em;
+            line-height: 20px;
+            text-align: justify;
+            color: #9b9b9b; }
+            @media only screen and (min-width: 992px) {
+              #club #adhesion .container #adhe article #old p {
+                line-height: 1.7;
+                font-size: 1.2em; } }
+            @media only screen and (min-width: 1200px) {
+              #club #adhesion .container #adhe article #old p a {
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.2em;
+                line-height: 20px;
+                text-align: justify;
+                color: #007ec6; } }
+          #club #adhesion .container #adhe article #old form button {
+            font-family: "Jost";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 1.125em;
+            line-height: 1.625em;
+            background-color: #007ec6;
+            color: white;
+            border: 1px solid #007EC6;
+            border-radius: 15px;
+            padding: 2px 12px;
+            transition: 0.3s ease-in-out;
+            cursor: pointer; }
+            @media only screen and (min-width: 1200px) {
+              #club #adhesion .container #adhe article #old form button {
+                font-size: 13px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: .8px;
+                padding: 15px 33px;
+                display: inline-block;
+                -webkit-appearance: none; } }
+            #club #adhesion .container #adhe article #old form button:hover {
+              background-color: white;
+              color: #007ec6; }
   #club #crecal {
     display: flex;
     width: 60%;
@@ -769,11 +751,11 @@ header nav {
           line-height: 20px;
           text-align: justify;
           color: #9b9b9b; }
-          @media only screen and (max-width: 992px) {
+          @media only screen and (min-width: 992px) {
             #club #crecal .crenaux .contcrenaux p {
               line-height: 1.7;
               font-size: 1.2em; } }
-          @media only screen and (max-width: 1600px) {
+          @media only screen and (min-width: 1200px) {
             #club #crecal .crenaux .contcrenaux p a {
               font-family: 'Jost';
               font-style: normal;
@@ -795,7 +777,7 @@ header nav {
           padding: 2px 12px;
           transition: 0.3s ease-in-out;
           cursor: pointer; }
-          @media only screen and (max-width: 1600px) {
+          @media only screen and (min-width: 1200px) {
             #club #crecal .crenaux .contcrenaux form button {
               font-size: 13px;
               font-weight: 700;
@@ -834,11 +816,11 @@ header nav {
           line-height: 20px;
           text-align: justify;
           color: #9b9b9b; }
-          @media only screen and (max-width: 992px) {
+          @media only screen and (min-width: 992px) {
             #club #crecal .calendrier .contcalendrier p {
               line-height: 1.7;
               font-size: 1.2em; } }
-          @media only screen and (max-width: 1600px) {
+          @media only screen and (min-width: 1200px) {
             #club #crecal .calendrier .contcalendrier p a {
               font-family: 'Jost';
               font-style: normal;
@@ -860,7 +842,7 @@ header nav {
           padding: 2px 12px;
           transition: 0.3s ease-in-out;
           cursor: pointer; }
-          @media only screen and (max-width: 1600px) {
+          @media only screen and (min-width: 1200px) {
             #club #crecal .calendrier .contcalendrier form button {
               font-size: 13px;
               font-weight: 700;
@@ -876,7 +858,7 @@ header nav {
 #infospratiques {
   padding-bottom: 2vh; }
   #infospratiques .container {
-    width: 60%;
+    width: 60% !important;
     margin: auto; }
     @media (min-width: 320px) {
       #infospratiques .container {
@@ -952,11 +934,11 @@ header nav {
             text-align: justify;
             color: #9b9b9b;
             color: white; }
-            @media only screen and (max-width: 992px) {
+            @media only screen and (min-width: 992px) {
               #infospratiques .container .cardsinfos .containercard .card p {
                 line-height: 1.7;
                 font-size: 1.2em; } }
-            @media only screen and (max-width: 1600px) {
+            @media only screen and (min-width: 1200px) {
               #infospratiques .container .cardsinfos .containercard .card p a {
                 font-family: 'Jost';
                 font-style: normal;
@@ -978,7 +960,7 @@ header nav {
             padding: 2px 12px;
             transition: 0.3s ease-in-out;
             cursor: pointer; }
-            @media only screen and (max-width: 1600px) {
+            @media only screen and (min-width: 1200px) {
               #infospratiques .container .cardsinfos .containercard .card form button {
                 font-size: 13px;
                 font-weight: 700;
@@ -1188,11 +1170,11 @@ header nav {
       line-height: 20px;
       text-align: justify;
       color: #9b9b9b; }
-      @media only screen and (max-width: 992px) {
+      @media only screen and (min-width: 992px) {
         #single #medcont article p {
           line-height: 1.7;
           font-size: 1.2em; } }
-      @media only screen and (max-width: 1600px) {
+      @media only screen and (min-width: 1200px) {
         #single #medcont article p a {
           font-family: 'Jost';
           font-style: normal;
@@ -1281,11 +1263,11 @@ header nav {
         line-height: 20px;
         text-align: justify;
         color: #9b9b9b; }
-        @media only screen and (max-width: 992px) {
+        @media only screen and (min-width: 992px) {
           #actus .container #allarticles article .textearticle p, #blog .container #allarticles article .textearticle p {
             line-height: 1.7;
             font-size: 1.2em; } }
-        @media only screen and (max-width: 1600px) {
+        @media only screen and (min-width: 1200px) {
           #actus .container #allarticles article .textearticle p a, #blog .container #allarticles article .textearticle p a {
             font-family: 'Jost';
             font-style: normal;
@@ -1338,165 +1320,176 @@ header nav {
               color: #007ec6;
               padding-right: 1vw; }
 
-#equipe h2 {
-  width: 100%;
-  font-family: 'Jost';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 35px;
-  color: #00171F;
-  justify-content: space-between;
-  padding-left: 3%;
-  border-left: 5px #007ec6 solid; }
-
-#equipe hr {
-  padding-top: 10vh;
-  border-top: 0px; }
-
-#equipe .container {
-  width: 40%;
-  margin: auto; }
-  @media only screen and (max-width: 992px) {
-    #equipe .container {
-      width: 80%; } }
-  @media only screen and (min-device-width: 992px) and (max-device-width: 1600px) {
-    #equipe .container {
-      width: 70%; } }
-  #equipe .container #fem, #equipe .container #masc, #equipe .container #loisir {
-    margin-top: 5vh; }
-    @media (min-width: 320px) {
-      #equipe .container #fem .st-vertical, #equipe .container #masc .st-vertical, #equipe .container #loisir .st-vertical {
-        flex-direction: column; } }
-    @media (min-width: 992px) {
-      #equipe .container #fem .st-vertical, #equipe .container #masc .st-vertical, #equipe .container #loisir .st-vertical {
-        flex-direction: row; } }
-    #equipe .container #fem .nav-link, #equipe .container #masc .nav-link, #equipe .container #loisir .nav-link {
-      text-decoration: none;
-      text-transform: uppercase;
-      font-family: 'Anek Tamil', sans-serif;
-      font-size: 18px;
-      color: #007ec6; }
-    #equipe .container #fem .tab-pane .phototab, #equipe .container #masc .tab-pane .phototab, #equipe .container #loisir .tab-pane .phototab {
-      width: 100%;
-      height: 50%; }
-      #equipe .container #fem .tab-pane .phototab img, #equipe .container #masc .tab-pane .phototab img, #equipe .container #loisir .tab-pane .phototab img {
-        width: 100%;
-        height: auto; }
-    #equipe .container #fem .tab-pane .entraineur, #equipe .container #masc .tab-pane .entraineur, #equipe .container #loisir .tab-pane .entraineur {
-      font-family: 'Jost';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 1em;
-      line-height: 20px;
-      text-align: justify;
-      color: #9b9b9b; }
-      @media only screen and (max-width: 992px) {
-        #equipe .container #fem .tab-pane .entraineur, #equipe .container #masc .tab-pane .entraineur, #equipe .container #loisir .tab-pane .entraineur {
-          line-height: 1.7;
-          font-size: 1.2em; } }
-      @media only screen and (max-width: 1600px) {
-        #equipe .container #fem .tab-pane .entraineur a, #equipe .container #masc .tab-pane .entraineur a, #equipe .container #loisir .tab-pane .entraineur a {
-          font-family: 'Jost';
-          font-style: normal;
-          font-weight: 500;
-          font-size: 1.2em;
-          line-height: 20px;
-          text-align: justify;
-          color: #007ec6; } }
-    #equipe .container #fem .tab-pane .liencalendrier, #equipe .container #masc .tab-pane .liencalendrier, #equipe .container #loisir .tab-pane .liencalendrier {
-      font-family: 'Anek Tamil', sans-serif;
-      font-style: normal;
-      color: #007ec6; }
-  #equipe .container #loisir {
-    margin-bottom: 5vh; }
-
-#inscription #blocinscriptions {
-  padding-top: 7vh;
-  padding-bottom: 7vh;
-  width: 100%;
-  display: flex; }
-  @media (min-width: 320px) {
-    #inscription #blocinscriptions {
-      width: 80%;
-      margin: auto; } }
-  #inscription #blocinscriptions #leftinscription {
-    display: none;
-    width: 50%;
-    height: 485px;
-    clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
-    background-image: url("http://localhost:8888/lrvb/wp-content/uploads/2022/08/lrvb-lien-inscription.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top; }
-  #inscription #blocinscriptions #rightinscription {
-    width: 50%; }
-    @media (min-width: 320px) {
-      #inscription #blocinscriptions #rightinscription {
-        width: 100%; } }
-    #inscription #blocinscriptions #rightinscription h2 {
-      width: 100%;
-      font-family: 'Jost';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 35px;
-      color: #00171F;
-      justify-content: space-between;
-      padding-left: 3%;
-      border-left: 5px #007ec6 solid;
-      margin-top: 0px; }
-    #inscription #blocinscriptions #rightinscription p {
-      width: 80%;
-      margin: left;
-      font-family: 'Jost';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 1em;
-      line-height: 20px;
-      text-align: justify;
-      color: #9b9b9b; }
-      @media only screen and (max-width: 992px) {
-        #inscription #blocinscriptions #rightinscription p {
-          line-height: 1.7;
-          font-size: 1.2em; } }
-      @media only screen and (max-width: 1600px) {
-        #inscription #blocinscriptions #rightinscription p a {
-          font-family: 'Jost';
-          font-style: normal;
-          font-weight: 500;
-          font-size: 1.2em;
-          line-height: 20px;
-          text-align: justify;
-          color: #007ec6; } }
+#equipe {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='267' height='267' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23007EC6' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%2300171F'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E"); }
+  #equipe h2 {
+    width: 100%;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: #00171F;
+    justify-content: space-between;
+    padding-left: 3%;
+    border-left: 5px #007ec6 solid; }
+  #equipe hr {
+    padding-top: 10vh;
+    border-top: 0px; }
+  #equipe .container {
+    background-color: #ffffffb3;
+    width: 40%;
+    margin: auto; }
+    @media only screen and (max-width: 992px) {
+      #equipe .container {
+        width: 80%; } }
+    @media only screen and (min-device-width: 992px) and (max-device-width: 1600px) {
+      #equipe .container {
+        width: 70%; } }
+    #equipe .container #fem, #equipe .container #masc, #equipe .container #loisir {
+      margin-top: 5vh; }
       @media (min-width: 320px) {
-        #inscription #blocinscriptions #rightinscription p {
-          width: 100%; } }
-    #inscription #blocinscriptions #rightinscription form button {
-      font-family: "Jost";
-      font-style: normal;
-      font-weight: 300;
-      font-size: 1.125em;
-      line-height: 1.625em;
-      background-color: #007ec6;
-      color: white;
-      border: 1px solid #007EC6;
-      border-radius: 15px;
-      padding: 2px 12px;
-      transition: 0.3s ease-in-out;
-      cursor: pointer; }
-      @media only screen and (max-width: 1600px) {
-        #inscription #blocinscriptions #rightinscription form button {
-          font-size: 13px;
-          font-weight: 700;
-          text-transform: uppercase;
-          letter-spacing: .8px;
-          padding: 15px 33px;
-          display: inline-block;
-          -webkit-appearance: none; } }
-      #inscription #blocinscriptions #rightinscription form button:hover {
-        background-color: white;
+        #equipe .container #fem .st-vertical, #equipe .container #masc .st-vertical, #equipe .container #loisir .st-vertical {
+          flex-direction: column; } }
+      @media (min-width: 992px) {
+        #equipe .container #fem .st-vertical, #equipe .container #masc .st-vertical, #equipe .container #loisir .st-vertical {
+          flex-direction: row; } }
+      #equipe .container #fem .nav-link, #equipe .container #masc .nav-link, #equipe .container #loisir .nav-link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Anek Tamil', sans-serif;
+        font-size: 18px;
         color: #007ec6; }
+      #equipe .container #fem .tab-pane .phototab, #equipe .container #masc .tab-pane .phototab, #equipe .container #loisir .tab-pane .phototab {
+        width: 100%;
+        height: 50%; }
+        #equipe .container #fem .tab-pane .phototab img, #equipe .container #masc .tab-pane .phototab img, #equipe .container #loisir .tab-pane .phototab img {
+          width: 100%;
+          height: auto; }
+      #equipe .container #fem .tab-pane .entraineur, #equipe .container #masc .tab-pane .entraineur, #equipe .container #loisir .tab-pane .entraineur {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 20px;
+        text-align: justify;
+        color: #9b9b9b; }
+        @media only screen and (min-width: 992px) {
+          #equipe .container #fem .tab-pane .entraineur, #equipe .container #masc .tab-pane .entraineur, #equipe .container #loisir .tab-pane .entraineur {
+            line-height: 1.7;
+            font-size: 1.2em; } }
+        @media only screen and (min-width: 1200px) {
+          #equipe .container #fem .tab-pane .entraineur a, #equipe .container #masc .tab-pane .entraineur a, #equipe .container #loisir .tab-pane .entraineur a {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.2em;
+            line-height: 20px;
+            text-align: justify;
+            color: #007ec6; } }
+      #equipe .container #fem .tab-pane .liencalendrier, #equipe .container #masc .tab-pane .liencalendrier, #equipe .container #loisir .tab-pane .liencalendrier {
+        font-family: 'Anek Tamil', sans-serif;
+        font-style: normal;
+        color: #007ec6; }
+    #equipe .container #loisir {
+      margin-bottom: 5vh; }
+
+#inscription {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%2300171F' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23007EC6'%3E%3Ccircle cx='769' cy='229' r='7'/%3E%3Ccircle cx='539' cy='269' r='7'/%3E%3Ccircle cx='603' cy='493' r='7'/%3E%3Ccircle cx='731' cy='737' r='7'/%3E%3Ccircle cx='520' cy='660' r='7'/%3E%3Ccircle cx='309' cy='538' r='7'/%3E%3Ccircle cx='295' cy='764' r='7'/%3E%3Ccircle cx='40' cy='599' r='7'/%3E%3Ccircle cx='102' cy='382' r='7'/%3E%3Ccircle cx='127' cy='80' r='7'/%3E%3Ccircle cx='370' cy='105' r='7'/%3E%3Ccircle cx='578' cy='42' r='7'/%3E%3Ccircle cx='237' cy='261' r='7'/%3E%3Ccircle cx='390' cy='382' r='7'/%3E%3C/g%3E%3C/svg%3E"); }
+  #inscription #blocinscriptions {
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    width: 100%;
+    display: flex;
+    background-color: #ffffffb3; }
+    @media (min-width: 320px) {
+      #inscription #blocinscriptions {
+        width: 80%;
+        margin: auto; } }
+    #inscription #blocinscriptions #leftinscription {
+      display: none;
+      width: 50%;
+      height: 485px;
+      clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+      background-image: url("http://localhost:8888/lrvb/wp-content/uploads/2022/08/lrvb-lien-inscription.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top; }
+    #inscription #blocinscriptions #rightinscription {
+      width: 50%; }
+      @media (min-width: 320px) {
+        #inscription #blocinscriptions #rightinscription {
+          width: 100%; } }
+      #inscription #blocinscriptions #rightinscription h2 {
+        width: 100%;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        color: #00171F;
+        justify-content: space-between;
+        padding-left: 3%;
+        border-left: 5px #007ec6 solid;
+        margin-top: 0px; }
+      #inscription #blocinscriptions #rightinscription p {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 20px;
+        text-align: justify;
+        color: #9b9b9b;
+        width: 80%;
+        margin: left;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 20px;
+        text-align: justify;
+        color: #9b9b9b; }
+        @media only screen and (min-width: 992px) {
+          #inscription #blocinscriptions #rightinscription p {
+            line-height: 1.7;
+            font-size: 1.2em; } }
+        @media only screen and (min-width: 1200px) {
+          #inscription #blocinscriptions #rightinscription p a {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.2em;
+            line-height: 20px;
+            text-align: justify;
+            color: #007ec6; } }
+        @media (min-width: 320px) {
+          #inscription #blocinscriptions #rightinscription p {
+            width: 100%; } }
+      #inscription #blocinscriptions #rightinscription form button {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.125em;
+        line-height: 1.625em;
+        background-color: #007ec6;
+        color: white;
+        border: 1px solid #007EC6;
+        border-radius: 15px;
+        padding: 2px 12px;
+        transition: 0.3s ease-in-out;
+        cursor: pointer; }
+        @media only screen and (min-width: 1200px) {
+          #inscription #blocinscriptions #rightinscription form button {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .8px;
+            padding: 15px 33px;
+            display: inline-block;
+            -webkit-appearance: none; } }
+        #inscription #blocinscriptions #rightinscription form button:hover {
+          background-color: white;
+          color: #007ec6; }
 
 #defieco {
   margin-top: 5vh;
@@ -1542,11 +1535,11 @@ header nav {
         text-align: center;
         width: 80%;
         margin: auto; }
-        @media only screen and (max-width: 992px) {
+        @media only screen and (min-width: 992px) {
           #defieco .container article p {
             line-height: 1.7;
             font-size: 1.2em; } }
-        @media only screen and (max-width: 1600px) {
+        @media only screen and (min-width: 1200px) {
           #defieco .container article p a {
             font-family: 'Jost';
             font-style: normal;
@@ -1580,96 +1573,95 @@ header nav {
     color: #00171F; }
 
 #contact {
-  width: 80%;
-  margin: auto;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='267' height='267' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23007EC6' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%2300171F'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse; }
   @media (min-width: 320px) {
     #contact {
       flex-direction: column; } }
-  @media (min-width: 992px) {
-    #contact {
-      width: 80%;
-      margin: auto; } }
-  @media (min-width: 992px) {
-    #contact #allcontact {
-      display: flex;
-      justify-content: space-between; } }
-  #contact #allcontact #contactform {
-    width: 30%; }
-    @media (min-width: 320px) {
-      #contact #allcontact #contactform {
-        width: 100%; } }
+  #contact #allcontact {
+    background-color: #ffffffb3;
+    width: 80%;
+    margin: auto; }
     @media (min-width: 992px) {
-      #contact #allcontact #contactform {
-        width: 45%; } }
-    #contact #allcontact #contactform form input, #contact #allcontact #contactform form textarea {
-      width: 100%;
-      border: 1px solid #EFEFEF;
-      border-style: solid;
-      font-family: 'Jost';
-      font-style: normal;
-      font-weight: 300;
-      font-size: 18px;
-      line-height: 26px;
-      color: #686868;
-      padding: 10px;
-      /* marge interne de 10 pixels*/
-      border-radius: 3px;
-      /* rayon de la bordure courbé de 3 pixels */
-      background: #e8eaed;
-      /* arrière-plan de couleur #e8eaed (code couleur HEX) */ }
-    #contact #allcontact #contactform #champs {
-      font-family: 'Jost';
-      font-style: normal;
-      font-weight: 300;
-      font-size: 12px;
-      color: #686868; }
-    #contact #allcontact #contactform .wpcf7-submit {
-      width: 30%;
-      font-family: 'Jost';
-      font-style: normal;
-      font-weight: 300;
-      font-size: 18px;
-      line-height: 26px;
-      background-color: white;
-      color: #007ec6;
-      border: 1px solid #007ec6;
-      border-radius: 15px;
-      padding: 2px 12px;
-      transition: .3s ease-in-out;
-      /* animation de transition, dans ce cas pour la transition de couleur d’arrière-plan en mode survol */
-      cursor: pointer; }
-      #contact #allcontact #contactform .wpcf7-submit:hover {
-        background-color: #007ec6;
-        color: white; }
-  #contact #allcontact #adresse {
-    width: 50%; }
-    @media (min-width: 320px) {
-      #contact #allcontact #adresse {
-        width: 100%; } }
-    @media (min-width: 992px) {
-      #contact #allcontact #adresse {
-        width: 45%; } }
-    #contact #allcontact #adresse h2 {
-      width: 100%;
-      font-family: 'Jost';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 35px;
-      color: #00171F;
-      justify-content: space-between;
-      padding-left: 3%;
-      border-left: 5px #007ec6 solid; }
-    #contact #allcontact #adresse p {
-      font-family: 'Jost';
-      font-style: normal;
-      font-weight: 300;
-      font-size: 14px;
-      line-height: 20px;
-      color: #686868; }
+      #contact #allcontact {
+        display: flex;
+        justify-content: space-between; } }
+    #contact #allcontact #contactform {
+      width: 30%; }
+      @media (min-width: 320px) {
+        #contact #allcontact #contactform {
+          width: 100%; } }
+      @media (min-width: 992px) {
+        #contact #allcontact #contactform {
+          width: 45%; } }
+      #contact #allcontact #contactform form input, #contact #allcontact #contactform form textarea {
+        width: 100%;
+        border: 1px solid #EFEFEF;
+        border-style: solid;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+        color: #686868;
+        padding: 10px;
+        /* marge interne de 10 pixels*/
+        border-radius: 3px;
+        /* rayon de la bordure courbé de 3 pixels */
+        background: #e8eaed;
+        /* arrière-plan de couleur #e8eaed (code couleur HEX) */ }
+      #contact #allcontact #contactform #champs {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        color: #686868; }
+      #contact #allcontact #contactform .wpcf7-submit {
+        width: 30%;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+        background-color: white;
+        color: #007ec6;
+        border: 1px solid #007ec6;
+        border-radius: 15px;
+        padding: 2px 12px;
+        transition: .3s ease-in-out;
+        /* animation de transition, dans ce cas pour la transition de couleur d’arrière-plan en mode survol */
+        cursor: pointer; }
+        #contact #allcontact #contactform .wpcf7-submit:hover {
+          background-color: #007ec6;
+          color: white; }
+    #contact #allcontact #adresse {
+      width: 50%; }
+      @media (min-width: 320px) {
+        #contact #allcontact #adresse {
+          width: 100%; } }
+      @media (min-width: 992px) {
+        #contact #allcontact #adresse {
+          width: 45%; } }
+      #contact #allcontact #adresse h2 {
+        width: 100%;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        color: #00171F;
+        justify-content: space-between;
+        padding-left: 3%;
+        border-left: 5px #007ec6 solid; }
+      #contact #allcontact #adresse p {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        color: #686868; }
 
 h2 {
   width: 100%;

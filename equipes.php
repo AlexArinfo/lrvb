@@ -59,7 +59,6 @@ M13 Mixte
 			<?php echo wp_get_attachment_image( $photo_pre_nationale, $size ); ?>
 			<?php endif; ?>
 			</div>
-			<p class="entraineur">Nom de l'entraineur:<?php the_sub_field( 'entraineur_pre-nationale' ); ?></p>	
 			<?php $calendrier_pre_nationale = get_sub_field( 'calendrier_pre-nationale' ); ?>
 			<?php if ( $calendrier_pre_nationale ) : ?>
 				<a class="liencalendrier" href="<?php echo esc_url( $calendrier_pre_nationale['url'] ); ?>" target="<?php echo esc_attr( $calendrier_pre_nationale['target'] ); ?>"><?php echo esc_html( $calendrier_pre_nationale['title'] ); ?>Calendrier et résultats</a>
@@ -79,7 +78,6 @@ M13 Mixte
 						<?php echo wp_get_attachment_image( $photo_departementale, $size ); ?>
 						<?php endif; ?>
 						</div>
-						<p class="entraineur">Nom de l'entraineur:<?php the_sub_field( 'entraineur_departementale' ); ?></p>	
 						<?php $calendrier_departementale = get_sub_field( 'calendrier_departementale' ); ?>
 						<?php if ( $calendrier_departementale ) : ?>
 							<a class="liencalendrier" href="<?php echo esc_url( $calendrier_departementale['url'] ); ?>" target="<?php echo esc_attr( $calendrier_departementale['target'] ); ?>"><?php echo esc_html( $calendrier_departementale['title'] ); ?>Calendrier et résultats</a>
@@ -98,7 +96,6 @@ M13 Mixte
 									<?php echo wp_get_attachment_image( $photo_m18_coupe_de_france, $size ); ?>
 									<?php endif; ?>
 									</div>
-									<p class="entraineur">Nom de l'entraineur:<?php the_sub_field( 'entraineur_m18_coupe_de_france' ); ?></p>	
 									<?php $calendrier_m18_coupe_de_france = get_sub_field( 'calendrier_m18_coupe_de_france' ); ?>
 									<?php if ( $calendrier_m18_coupe_de_france ) : ?>
 										<a class="liencalendrier" href="<?php echo esc_url( $calendrier_m18_coupe_de_france['url'] ); ?>" target="<?php echo esc_attr( $calendrier_m18_coupe_de_france['target'] ); ?>"><?php echo esc_html( $calendrier_m18_coupe_de_france['title'] ); ?>Calendrier et résultats</a>
@@ -117,7 +114,6 @@ M13 Mixte
 												<?php echo wp_get_attachment_image( $photo_m18, $size ); ?>
 												<?php endif; ?>
 												</div>
-												<p class="entraineur">Nom de l'entraineur:<?php the_sub_field( 'entraineur_m18' ); ?></p>	
 												<?php $calendrier_m18 = get_sub_field( 'calendrier_m18' ); ?>
 												<?php if ( $calendrier_m18 ) : ?>
 													<a class="liencalendrier" href="<?php echo esc_url( $calendrier_m18['url'] ); ?>" target="<?php echo esc_attr( $calendrier_m18['target'] ); ?>"><?php echo esc_html( $calendrier_m18['title'] ); ?>Calendrier et résultats</a>
@@ -136,7 +132,6 @@ M13 Mixte
 															<?php echo wp_get_attachment_image( $photo_m15, $size ); ?>
 															<?php endif; ?>
 															</div>
-															<p class="entraineur">Nom de l'entraineur:<?php the_sub_field( 'entraineur_m15' ); ?></p>	
 															<?php $calendrier_m15 = get_sub_field( 'calendrier_m15' ); ?>
 															<?php if ( $calendrier_m15 ) : ?>
 																<a class="liencalendrier" href="<?php echo esc_url( $calendrier_m15['url'] ); ?>" target="<?php echo esc_attr( $calendrier_m15['target'] ); ?>"><?php echo esc_html( $calendrier_m15['title'] ); ?>Calendrier et résultats</a>
@@ -155,7 +150,6 @@ M13 Mixte
 																		<?php echo wp_get_attachment_image( $photo_m13_mixte, $size ); ?>
 																		<?php endif; ?>
 																		</div>
-																		<p class="entraineur">Nom de l'entraineur:<?php the_sub_field( 'entraineur_m13_mixte' ); ?></p>	
 																		<?php $calendrier_m13_mixte = get_sub_field( 'calendrier_m13_mixte' ); ?>
 																		<?php if ( $calendrier_m13_mixte ) : ?>
 																			<a class="liencalendrier" href="<?php echo esc_url( $calendrier_m13_mixte['url'] ); ?>" target="<?php echo esc_attr( $calendrier_m13_mixte['target'] ); ?>"><?php echo esc_html( $calendrier_m13_mixte['title'] ); ?>Calendrier et résultats</a>
@@ -222,7 +216,6 @@ M13 Mixte
 																						<?php echo wp_get_attachment_image( $photo_pre_nationale, $size ); ?>
 																						<?php endif; ?>
 																						</div>
-																						<p class="entraineur">Nom de l'entraineur:<?php the_sub_field( 'entraineur_pre-nationale' ); ?></p>
 																						<?php $calendrier_pre_nationale = get_sub_field( 'calendrier_pre-nationale' ); ?>
 																						<?php if ( $calendrier_pre_nationale ) : ?>
 																							<a class="liencalendrier" href="<?php echo esc_url( $calendrier_pre_nationale['url'] ); ?>" target="<?php echo esc_attr( $calendrier_pre_nationale['target'] ); ?>"><?php echo esc_html( $calendrier_pre_nationale['title'] ); ?>Calendrier et résultats</a>
@@ -240,7 +233,6 @@ M13 Mixte
 																									<?php echo wp_get_attachment_image( $photo_departementale_a, $size ); ?>
 																									<?php endif; ?>
 																									</div>
-																									<p class="entraineur">Nom de l'entraineur:<?php the_sub_field( 'entraineur_departementale_a' ); ?></p>
 																									<?php $calendrier_departementale_a = get_sub_field( 'calendrier_departementale_a' ); ?>
 																									<?php if ( $calendrier_departementale_a ) : ?>
 																										<a class="liencalendrier" href="<?php echo esc_url( $calendrier_departementale_a['url'] ); ?>" target="<?php echo esc_attr( $calendrier_departementale_a['target'] ); ?>"><?php echo esc_html( $calendrier_departementale_a['title'] ); ?>Calendrier et résultats</a>
@@ -259,7 +251,6 @@ M13 Mixte
 																												<?php echo wp_get_attachment_image( $photo_departementale_b, $size ); ?>
 																												<?php endif; ?>
 																												</div>
-																												<p class="entraineur">Nom de l'entraineur:<?php the_sub_field( 'entraineur_departementale_b' ); ?></p>
 																												<?php $calendrier_departementale_b = get_sub_field( 'calendrier_departementale_b' ); ?>
 																												<?php if ( $calendrier_departementale_b ) : ?>
 																													<a class="liencalendrier" href="<?php echo esc_url( $calendrier_departementale_b['url'] ); ?>" target="<?php echo esc_attr( $calendrier_departementale_b['target'] ); ?>"><?php echo esc_html( $calendrier_departementale_b['title'] ); ?>Calendrier et résultats</a>
@@ -278,7 +269,6 @@ M13 Mixte
 																															<?php echo wp_get_attachment_image( $photo_m18, $size ); ?>
 																															<?php endif; ?>
 																															</div>
-																															<p class="entraineur">Nom de l'entraineur:<?php the_sub_field( 'entraineur_m18' ); ?></p>	
 																															<?php $calendrier_m18 = get_sub_field( 'calendrier_m18' ); ?>
 																															<?php if ( $calendrier_m18 ) : ?>
 																																<a class="liencalendrier" href="<?php echo esc_url( $calendrier_m18['url'] ); ?>" target="<?php echo esc_attr( $calendrier_m18['target'] ); ?>"><?php echo esc_html( $calendrier_m18['title'] ); ?>Calendrier et résultats</a>
@@ -297,7 +287,6 @@ M13 Mixte
 																																		<?php echo wp_get_attachment_image( $photo_m15, $size ); ?>
 																																		<?php endif; ?>
 																																		</div>
-																																		<p class="entraineur">Nom de l'entraineur:<?php the_sub_field( 'entraineur_m15' ); ?></p>	
 																																		<?php $calendrier_m15 = get_sub_field( 'calendrier_m15' ); ?>
 																																		<?php if ( $calendrier_m15 ) : ?>
 																																			<a class="liencalendrier" href="<?php echo esc_url( $calendrier_m15['url'] ); ?>" target="<?php echo esc_attr( $calendrier_m15['target'] ); ?>"><?php echo esc_html( $calendrier_m15['title'] ); ?>Calendrier et résultats</a>
@@ -316,7 +305,6 @@ M13 Mixte
 																																					<?php echo wp_get_attachment_image( $photo_m13, $size ); ?>
 																																					<?php endif; ?>
 																																					</div>
-																																					<p class="entraineur">Nom de l'entraineur:<?php the_sub_field( 'entraineur_m13' ); ?></p>
 																																					<?php $calendrier_m13 = get_sub_field( 'calendrier_m13' ); ?>
 																																					<?php if ( $calendrier_m13 ) : ?>
 																																						<a class="liencalendrier" href="<?php echo esc_url( $calendrier_m13['url'] ); ?>" target="<?php echo esc_attr( $calendrier_m13['target'] ); ?>"><?php echo esc_html( $calendrier_m13['title'] ); ?>Calendrier et résultats</a>
@@ -375,7 +363,6 @@ M13 Mixte
 																																									<?php echo wp_get_attachment_image( $photo_ecole_de_volley, $size ); ?>
 																																									<?php endif; ?>
 																																									</div>
-																																									<p class="entraineur">Nom de l'entraineur:<?php the_sub_field( 'entraineur_ecole_de_volley' ); ?></p>
 																																									<?php $calendrier_ecole_de_volley = get_sub_field( 'calendrier_ecole_de_volley' ); ?>
 																																									<?php if ( $calendrier_ecole_de_volley ) : ?>
 																																										<a class="liencalendrier" href="<?php echo esc_url( $calendrier_ecole_de_volley['url'] ); ?>" target="<?php echo esc_attr( $calendrier_ecole_de_volley['target'] ); ?>"><?php echo esc_html( $calendrier_ecole_de_volley['title'] ); ?>Calendrier et résultats</a>
@@ -394,7 +381,6 @@ M13 Mixte
 																																												<?php echo wp_get_attachment_image( $photo_baby_volley, $size ); ?>
 																																												<?php endif; ?>
 																																												</div>
-																																												<p class="entraineur">Nom de l'entraineur:<?php the_sub_field( 'entraineur_baby_volley' ); ?></p>
 																																												<?php $calendrier_baby_volley = get_sub_field( 'calendrier_baby_volley' ); ?>
 																																												<?php if ( $calendrier_baby_volley ) : ?>
 																																													<a class="liencalendrier" href="<?php echo esc_url( $calendrier_baby_volley['url'] ); ?>" target="<?php echo esc_attr( $calendrier_baby_volley['target'] ); ?>"><?php echo esc_html( $calendrier_baby_volley['title'] ); ?>Calendrier et résultats</a>
@@ -413,7 +399,6 @@ M13 Mixte
 																																															<?php echo wp_get_attachment_image( $photo_volley_assis, $size ); ?>
 																																															<?php endif; ?>
 																																															</div>
-																																															<p class="entraineur">Nom de l'entraineur:<?php the_sub_field( 'entraineur_volley_assis' ); ?></p>
 																																															<?php $calendrier_volley_assis = get_sub_field( 'calendrier_volley_assis' ); ?>
 																																															<?php if ( $calendrier_volley_assis ) : ?>
 																																																<a class="liencalendrier" href="<?php echo esc_url( $calendrier_volley_assis['url'] ); ?>" target="<?php echo esc_attr( $calendrier_volley_assis['target'] ); ?>"><?php echo esc_html( $calendrier_volley_assis['title'] ); ?>Calendrier et résultats</a>
@@ -432,7 +417,6 @@ M13 Mixte
 																																																		<?php echo wp_get_attachment_image( $photo_fit_volley, $size ); ?>
 																																																		<?php endif; ?>
 																																																		</div>
-																																																		<p class="entraineur">Nom de l'entraineur:<?php the_sub_field( 'entraineur_fit_volley' ); ?></p>
 																																																		<?php $calendrier_fit_volley = get_sub_field( 'calendrier_fit_volley' ); ?>
 																																																		<?php if ( $calendrier_fit_volley ) : ?>
 																																																			<a class="liencalendrier" href="<?php echo esc_url( $calendrier_fit_volley['url'] ); ?>" target="<?php echo esc_attr( $calendrier_fit_volley['target'] ); ?>"><?php echo esc_html( $calendrier_fit_volley['title'] ); ?>Calendrier et résultats</a>
@@ -447,9 +431,54 @@ M13 Mixte
 																																																			</section>
 																																																			</div>
 																																																			
-																																																			<hr>
+																																																			<div class="container">
+																																																			<section id="loisir">
+																																																			<h2>Equipe Loisir</h2>
+																																																			<div id="smarttab3" class="st-vertical">
+																																																			<ul class="nav">
+																																																			<li>
+																																																			<a class="nav-link" href="#tab-1">
+																																																			Equipe loisir
+																																																			</a>
+																																																			</li>
 																																																			
-																																																			</main>
+																																																			</ul>
 																																																			
 																																																			
-																																																			<?php get_footer(); ?>
+																																																			<div class="tab-content">
+																																																			<?php if ( have_rows( 'equipe_loisir' ) ) : ?>
+																																																				<?php while ( have_rows( 'equipe_loisir' ) ) : the_row(); ?>
+																																																				<div id="tab-1" class="tab-pane" role="tabpanel">
+																																																				<?php if ( have_rows( 'loisir' ) ) : ?>
+																																																					<?php while ( have_rows( 'loisir' ) ) : the_row(); ?>
+																																																					<div class="phototab">
+																																																					<?php $photo_ecole_de_volley = get_sub_field( 'photo_loisir' ); ?>
+																																																					<?php $size = 'full'; ?>
+																																																					<?php if ( $photo_ecole_de_volley ) : ?>
+																																																						<?php echo wp_get_attachment_image( $photo_ecole_de_volley, $size ); ?>
+																																																						<?php endif; ?>
+																																																						</div>
+																																																						<?php $calendrier_ecole_de_volley = get_sub_field( 'calendrier_loisir' ); ?>
+																																																						<?php if ( $calendrier_ecole_de_volley ) : ?>
+																																																							<a class="liencalendrier" href="<?php echo esc_url( $calendrier_ecole_de_volley['url'] ); ?>" target="<?php echo esc_attr( $calendrier_ecole_de_volley['target'] ); ?>"><?php echo esc_html( $calendrier_ecole_de_volley['title'] ); ?>Calendrier et résultats</a>
+																																																							<?php endif; ?>
+																																																							<?php endwhile; ?>
+																																																							<?php endif; ?>
+																																																							</div>
+																																																							
+																																																							
+																																																							
+																																																							
+																																																							<?php endwhile; ?>
+																																																							<?php endif; ?>
+																																																							</div>
+																																																							</div>
+																																																							</section>
+																																																							</div>
+																																																							
+																																																							<hr>
+																																																							
+																																																							</main>
+																																																							
+																																																							
+																																																							<?php get_footer(); ?>

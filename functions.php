@@ -46,7 +46,8 @@ function wpdocs_theme_setup() {
 
 function load_js_homemin(){
     if (is_page (7)){
-        wp_enqueue_script('scripthomemin', get_template_directory_uri() . '/javascript/scripthome.min.js'); 
+        wp_enqueue_script('slideshow', get_template_directory_uri() . '/javascript/slideshow.js');
+        wp_enqueue_script('scripthomemin', get_template_directory_uri() . '/javascript/scripthome.js'); 
         wp_enqueue_script('partner', get_template_directory_uri() . '/javascript/partner.js');
 
     }

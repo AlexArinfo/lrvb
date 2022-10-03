@@ -4,7 +4,7 @@
     .container{
         width: 50%;
         margin:auto;
-        padding-top: 3vh;
+        padding-top: 1vh;
         padding-bottom: 1vh;
         background-color: #ffffffb3;
         
@@ -12,7 +12,9 @@
             width: 80%;  
             padding-bottom: 2vh;
         }
-        
+        @media (min-width: 1200px) { 
+            padding-top: 3vh;
+        }
         
         
         #left{
@@ -144,47 +146,31 @@
             #linkzelive{
                 @media (min-width: 320px) { 
                     width: 80%;
+                    margin: auto;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: baseline;
                 }
                 
                 @media (min-width: 1200px) { 
                     padding-top: 2%;
-                    display: flex;
                     width: 40%;
-                    margin: auto;
-                    justify-content: space-between;
-                    align-items: baseline;
+                    margin: auto;      
                 }
                 a{
                     width: 40%;
                     img{
                         width: 100%;
                         height: auto;
+                        
+                        @media (min-width: 320px) { 
+                            width: 100%;
+                        }
                     }
                 }
             }
         }
-    }
-    
-    #resultats{
-        height: 200px;
-        background-image: url("http://localhost:8888/lrvb/wp-content/uploads/2022/06/lrvbvolley-scaled.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        .container{
-            display: block;
-            h2{
-                @include h2;
-                color: white;
-            }
-            a{
-                font-family: 'Anek Tamil', sans-serif;
-                font-style: normal;
-                text-decoration: none;
-                color:white;
-            }
-        }
-    }
+    }  
     
     #partenaires{
         .slider{
