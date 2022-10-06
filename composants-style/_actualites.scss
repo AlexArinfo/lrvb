@@ -1,6 +1,9 @@
 .heroupsingle{
     height: 700px;
     position: relative;
+    @media (max-width: 768px) { 
+        height: 30vh;
+        }
     .hero{
         height: 100%;
         background-repeat: no-repeat;
@@ -9,38 +12,26 @@
     }
     #infosarticle{
         position: absolute;
-        width: 25%;
+        width: 45%;
         top: 35%;
         left: 20%;
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
+        height: auto;
         
-       @media (min-width: 320px) { 
-            width: 100%;
-            left: 7%;
-        }
-
-        @media (min-width: 768px) { 
+        @media (max-width: 992px) { 
             width: 90%;
-            left: 7%;
-        }
-        
-        @media (min-width: 992px) { 
-            width: 80%;
             left: 5%;
         }
+       
+
         
-        @media (min-width: 1200px) { 
-            width: 50%;
-            left: 7%;
-        }
         .date{
             width: 12%;
-               
-           @media (min-width: 320px) { 
-                margin-right: 5vh;
-                width: 22%;
+            
+            @media (max-width: 768px) { 
+            width: 20%;
             }
             #dm{
                 display: flex;
@@ -84,10 +75,12 @@
             
         }
         #infoarticlebis{
-            display: flex;
-            flex-direction: column;
             h1{
-                margin: 0px;
+               
+            @media (max-width: 768px) { 
+            margin-left: 5%;
+            margin-top: 0;
+            }
                 a{
                     font-family: 'Jost';
                     font-style: normal;
@@ -97,7 +90,9 @@
                     text-align: center;
                     color: #FFFFFF;
                     text-decoration: none;
-                    
+                     @media (max-width: 768px) { 
+                     font-size: 1em;
+                     }
                 }
             } 
             
@@ -112,22 +107,22 @@
 #single{
     margin-top:2%;
     .container{
-        width: 80%;
-        margin: auto;
+        @include container;
         display: flex;
         justify-content: space-between;
-        
-       @media (min-width: 320px) { 
+        @media (max-width: 768px) { 
             flex-direction: column;
         }
     } 
     
     #medcont{
         width: 50%;
-       @media (min-width: 320px) { 
-            width: 100%;
+        @media (max-width: 768px) { 
+            width: 100% !important;
         }
-        
+        @media (max-width: 992px) { 
+        width: 60%;
+        }
         article{
             p{
                 @include p;
@@ -144,10 +139,14 @@
         line-height: 20px;
         text-align: justify;
         color: #00171F;
-       @media (min-width: 320px) { 
-            width: 100%;
+
+        @media (max-width: 768px) { 
+            width: 100% !important;
         }
         
+        @media (max-width: 992px) { 
+        width: 30%;
+        }
         
     }
 }

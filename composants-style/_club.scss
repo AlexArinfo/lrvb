@@ -6,14 +6,7 @@
         padding-top: 2vh;
         padding-bottom: 2vh;
         .container{
-            margin: auto;
-            width: 60% !important;
-           
-            @media (min-width: 320px) { 
-                width: 80% !important;
-               
-            }
-
+            @include container;
             
             #adhe{
                 width: 100%;
@@ -26,9 +19,9 @@
                         @include h2;
                         margin-top: 0;
                         width: 50%;
-
+                        
                         @media (min-width: 320px) { 
-                        width: 100%;
+                            width: 100%;
                         }
                     } 
                     #new{
@@ -69,18 +62,18 @@
     
     #crecal{
         display: flex;
-        width: 60%;
-        margin: auto;
         justify-content: space-between;
-       @media (min-width: 320px) { 
-            width: 80%;
+        @include container;
+        
+        @media (max-width: 768px) { 
             flex-direction: column;
             margin-bottom: 2vh;
-        } 
+        }
         
         .crenaux{
             width: 45%;
-           @media (min-width: 320px) { 
+
+            @media (max-width: 768px) { 
                 width: 100%;
             }
             
@@ -102,10 +95,10 @@
         
         .calendrier{
             width: 50%;
-           @media (min-width: 320px) { 
+            
+            @media (max-width: 768px) { 
                 width: 100%;
             }
-            
             .contcalendrier{
                 background-color: #ffffffb3;
                 

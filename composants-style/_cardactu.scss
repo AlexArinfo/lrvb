@@ -1,48 +1,35 @@
 #actus,#blog{
     .container{
-       @media (min-width: 320px) { 
-        width: 80%;
-        margin: auto;
-        }
+        @include container;
         #allarticles{
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-           @media (min-width: 320px) { 
-            flex-direction: column;
+            @media (max-width: 768px) { 
+                flex-direction: column;
             }
-
-            @media (min-width: 992px) { 
-            flex-direction: row;
-            }
+            
             article{
                 background-color: white;
                 width: 31%;
                 min-height: 500px;
                 margin-bottom: 2%;
-               @media (min-width: 320px) { 
-                width: 100%;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                
+                @media (max-width: 768px) { 
+                    width: 100%;
                 }
-
-                @media (min-width: 992px) { 
-                width: 45%;
-                }
-
-                @media (min-width: 1200px) { 
-                width: 28%;
-                min-height: 480px;
-                }
+                
                 
                 
                 .imgarticle{
-                   
+                    
                     img{
                         width: 100%;
                         height: auto; 
-                        @media (min-width: 1200px) { 
-                            min-height: 220px;
-                            object-fit: cover;
-                        }
+                        min-height: 220px;
+                        object-fit: cover;
+                        
                     }
                 }
                 .textearticle{
@@ -95,7 +82,7 @@
                         align-items: baseline;
                         width: 100%;
                         
-                       
+                        
                         .aut{
                             font-family: 'Jost';
                             font-style: normal;

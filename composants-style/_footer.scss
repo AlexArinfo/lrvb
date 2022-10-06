@@ -2,31 +2,26 @@ footer{
     background-color: $sectext;
     padding-top: 5vh;
     .container{
-        width: 60%;
         margin: auto;
         display: flex;
         justify-content: space-between;
-        
-       @media (min-width: 320px) { 
-            width: 80%;
+        @include container;
+        @media (max-width: 768px) { 
             flex-direction: column;
-        }
-
-        @media (min-width: 992px) { 
-        flex-direction: row;
+            align-items: center;
         }
         
         .colfoo{
             width: 15%;
             display: flex;
             flex-direction: column;
-           @media (min-width: 320px) { 
+            
+            @media (max-width: 768px) { 
                 width: 100%;
             }
-
-            @media (min-width: 992px) { 
-            width: 45%;
-            }
+            
+           
+            
             h3{
                 font-family: 'Anek Tamil';
                 font-style: normal;
@@ -35,19 +30,18 @@ footer{
                 line-height: 23px;
                 color: white;
                 text-transform: uppercase;
-
-                @media (min-width: 320px) { 
-                margin-bottom: 0;
+                
+                @media (max-width: 768px) { 
+                    margin-bottom: 0;
                 }
             }
         }
         #logfoo{
             a{
                 width:50%;
-
-                @media (min-width: 320px) { 
-                width: 30%;
-                margin: auto;
+                @media (max-width: 768px) { 
+                    width: 30%;
+                    margin: auto;
                 }
                 img{
                     width: 100%;
@@ -59,9 +53,9 @@ footer{
             ul{
                 padding-left: 0px;
                 list-style: none;
-
-                @media (min-width: 320px) { 
-                margin-top: 0;
+                
+                @media (max-width: 768px) { 
+                    margin-top: 0;
                 }
                 li{
                     a{
@@ -99,14 +93,12 @@ footer{
                 margin: 0px;
             }
             #rs{
+                width: 100%;
                 
-               @media (min-width: 320px) { 
+                @media (max-width: 768px) { 
                     width: 50%;
                 }
-
-                @media (min-width: 992px) { 
-                width: 100%;
-                }
+                
                 ul{
                     padding-left: 0px;
                     list-style: none;
@@ -136,9 +128,8 @@ footer{
             display: flex;
             justify-content: space-between;
             
-           @media (min-width: 320px) { 
+            @media (max-width: 768px) { 
                 width: 80%;
-           
             }
             
             a{
@@ -153,14 +144,16 @@ footer{
                     color: $prim;
                 } 
                 
-               @media (min-width: 320px) { 
+                
+                
+                @media (max-width: 768px) { 
                     width: 100%;
                 }
-               
+                
             }
             a:nth-child(2){
                 @media (min-width: 992px) { 
-                text-align: right;
+                    text-align: right;
                 }
             }
         }

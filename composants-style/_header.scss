@@ -30,13 +30,11 @@
 
 
 header {
-  @media (min-width: 320px) { 
-    padding-top: 6vh;
-  }
-  
-  @media (min-width: 1200px) { 
-    padding-top: 4vh;
-    padding-bottom: 1vh;
+  padding-top: 4vh;
+  padding-bottom: 1vh;
+
+  @media (max-width: 992px) { 
+    padding-top: 8vh;
   }
   
   nav{
@@ -46,71 +44,67 @@ header {
     justify-content:space-between;
     display: flex;
     
-    
-    @media (min-width: 320px) { 
+    @media (max-width: 992px) { 
       display: none;
-      width: 80%;
     }
     
-    @media (min-width: 1200px) { 
-      
-      width: 80%;
-      display: flex;
-      flex-direction: row;
-      
+    @media (max-width: 1600px) { 
+        width: 80%;
     }
+    
+    
     
     a{
-      @media (min-width: 1200px) { 
-        width: 10%!important;
-      }
-      
-      @media (min-width: 320px) { 
-       
+      width: 10%;
+      @media (max-width: 992px) { 
         justify-content: center;
         width: 100%;
+        display: flex;
       }
       
+      
+      
       img{
-        @media (min-width: 1200px) { 
-          width: 100%!important;
-          height: auto!important;
-        }  
         
-        @media (min-width: 320px) { 
+        width: 100%;
+        height: auto;
+        @media (max-width: 992px) { 
           width: 40%;
           height: auto;
+          display: flex;
         }
+        
+        
       }
     }
     
     ul {
-      @media (min-width: 1200px) { 
-        width: 65%!important;
-        justify-content: space-between!important;
-        display: flex !important;
-        padding-left: 0 !important;
-        flex-direction: row !important;
-      }
       
+      width: 65%;
+      justify-content: space-between;
+      display: flex ;
+      padding-left: 0 ;
+      flex-direction: row ;
       
-      @media (min-width: 320px) { 
+      @media (max-width: 992px) { 
         width: 100%;
         flex-direction: column;
         padding-left: 0;
       }
       
       
+      
+      
       li {
         list-style: none;
         text-align: center;
-        @media (min-width: 1200px) { 
         width: 100%;
-        }
-        @media (min-width: 320px) { 
-          padding-top: 2vh;
-          padding-bottom: 2vh;
-        }
+       @media (max-width: 992px) { 
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+       }
+
+        
         a {
           font-family: "Anek Tamil";
           font-style: normal;
@@ -119,17 +113,16 @@ header {
           color: $prim;
           text-transform: uppercase;
           text-decoration: none; 
+          font-size: 1em !important;
           
-          @media (min-width: 1200px) { 
-            font-size: 1em !important;
-          }
           
           &:hover {
             color: $prim;
             font-weight: 400;
           }
           
-          @media (min-width: 320px) { 
+
+          @media (max-width: 992px) { 
             font-size: 1.5em;
           }
           
@@ -193,16 +186,12 @@ header {
       }
     }
   }
-  
-  
 }
 
 .toggle-menu {
-  
-  @media (min-width: 320px) { 
+  @media (max-width: 992px) { 
     display: block;
   }
-  
   width: 28px;
   height: 28px;
   position: absolute;
@@ -272,14 +261,12 @@ header {
 }
 
 .tog-menu {
-  @media (min-width: 320px) { 
+  display: none;
+  @media (max-width: 992px) { 
     display: block;
   }
   
-  @media (min-width: 1200px) { 
-    display: none;
-  }
-  
+
   a {
     margin-top: 25px;
     margin-left: 10px;

@@ -3,22 +3,9 @@
     padding-top: 1vh;
     padding-bottom: 1vh;
     .containerbis{
-        width: 80%;
+       @include container;
         margin: auto;
-        
-       @media (min-width: 320px) { 
-            width: 80%;   
-            padding-top: 1vh;
-            padding-bottom: 1vh;
-        }
-        
-        @media (min-width: 992px) { 
-            width: 70%;
-        }
-        
-        @media (min-width: 1200px) { 
-        width: 80%;
-        }
+       
         
         h2{
             font-family: 'Jost';
@@ -37,24 +24,20 @@
         #groupecompteur{
             display: flex;
             justify-content: space-between;
-           @media (min-width: 320px) { 
-            flex-wrap: wrap;
+            @media (max-width: 992px) { 
+                flex-wrap: wrap;
             }
-
-            @media (min-width: 1200px) { 
-            flex-direction: row;
-            }
+            
             .nomit{
                 display: flex;
                 flex-direction: column;
-               @media (min-width: 320px) { 
-                width: 50%;
-                align-items: center;
-                }
-
-                @media (min-width: 1200px) { 
                 width: 20%;
+
+                @media (max-width: 768px) { 
+                    width: 50%;
+                    align-items: center;
                 }
+              
                 .count{
                     font-family: 'Jost';
                     font-style: normal;

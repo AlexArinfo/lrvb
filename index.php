@@ -81,29 +81,84 @@ if (!function_exists('get_field')) return;
   <section id="partenaires">
   <h2>Nos partenaires</h2>
   <div class="customer-logos slider">
-  <div class="slide"><img src="https://testarinfo.fr/lrvb/wp-content/uploads/2022/09/logo-tissu-du-renard.jpeg">
+  <div class="slide"><img src="https://larochevb.fr/wp-content/uploads/2022/10/Tissus-du-Renard.png">
   </div>
   
-  <div class="slide"><img src="https://testarinfo.fr/lrvb/wp-content/uploads/2022/09/logo-rev-evas-yon.jpeg">
+  <div class="slide"><img src="https://larochevb.fr/wp-content/uploads/2022/10/Metier-interim.png">
   </div>
   
-  <div class="slide"><img src="https://testarinfo.fr/lrvb/wp-content/uploads/2022/09/logo-2021-lrsy-ville.jpeg">
+  <div class="slide"><img src="https://larochevb.fr/wp-content/uploads/2022/10/RevEvasYon.png">
   </div>
   
-  <div class="slide"><img src="https://testarinfo.fr/lrvb/wp-content/uploads/2022/09/le-grand-caf.png">
+  <div class="slide"><img src="https://larochevb.fr/wp-content/uploads/2022/10/Les-lunettes-de-Clement.png">
   </div>
   
-  <div class="slide"><img src="https://testarinfo.fr/lrvb/wp-content/uploads/2022/09/img-5027.jpeg">
+  <div class="slide"><img src="https://larochevb.fr/wp-content/uploads/2022/10/La-Roche-sur-Yon.png">
   </div>
   
-  <div class="slide"><img src="https://testarinfo.fr/lrvb/wp-content/uploads/2022/09/crescendo.jpeg">
+  <div class="slide"><img src="https://larochevb.fr/wp-content/uploads/2022/10/Le-Grand-Caf.png">
   </div>
   
-  <div class="slide"><img src="https://testarinfo.fr/lrvb/wp-content/uploads/2022/09/cmo.jpeg">
+  <div class="slide"><img src="https://larochevb.fr/wp-content/uploads/2022/10/La-Medina.png">
   </div>
   
-  <div class="slide"><img src="https://testarinfo.fr/lrvb/wp-content/uploads/2022/09/bailly.jpeg">
+  <div class="slide"><img src="https://larochevb.fr/wp-content/uploads/2022/10/Imprimerie-Yonnaise.png">
   </div>
+
+  <div class="slide"><img src="https://larochevb.fr/wp-content/uploads/2022/10/JPG.png">
+  </div>
+
+  <div class="slide"><img src="https://larochevb.fr/wp-content/uploads/2022/10/Hair-Actuel.png">
+  </div>
+
+  <div class="slide"><img src="https://larochevb.fr/wp-content/uploads/2022/10/Gilbert.png">
+  </div>
+
+  <div class="slide"><img src="https://larochevb.fr/wp-content/uploads/2022/10/Geouest.png">
+  </div>
+
+  <div class="slide"><img src="https://larochevb.fr/wp-content/uploads/2022/10/Garage-Rousset-1.png">
+  </div>
+
+  <div class="slide"><img src="https://larochevb.fr/wp-content/uploads/2022/10/Gamm-vert-1.png">
+  </div>
+
+  <div class="slide"><img src="https://larochevb.fr/wp-content/uploads/2022/10/Espace-des-Marques-1.png">
+  </div>
+
+  <div class="slide"><img src="https://larochevb.fr/wp-content/uploads/2022/10/Duret-1.png">
+  </div>
+
+  <div class="slide"><img src="https://larochevb.fr/wp-content/uploads/2022/10/Crescendo-1.png">
+  </div>
+
+  <div class="slide"><img src="https://larochevb.fr/wp-content/uploads/2022/10/Credit-Mutuel-1.png">
+  </div>
+
+  <div class="slide"><img src="https://larochevb.fr/wp-content/uploads/2022/10/Carama-1.png">
+  </div>
+
+  <div class="slide"><img src="https://larochevb.fr/wp-content/uploads/2022/10/Bailly-Immobilier.png">
+  </div>
+
+  <div class="slide"><img src="https://larochevb.fr/wp-content/uploads/2022/10/Au-Flash-Shoes.png">
+  </div>
+
+  <div class="slide"><img src="https://larochevb.fr/wp-content/uploads/2022/10/Aserti-Electronic.png">
+  </div>
+
+  <div class="slide"><img src="https://larochevb.fr/wp-content/uploads/2022/10/AD-Fleurs.png">
+  </div>
+
+  <div class="slide"><img src="https://larochevb.fr/wp-content/uploads/2022/10/Arinfo.png">
+  </div>
+
+
+
+
+
+
+
   </div>
   </section>
   

@@ -81,7 +81,7 @@ get_template_part( './template-parts/heroup');
 		<?php if ( have_rows( 'creneaux_d’entrainement' ) ) : ?>
             <div class="contcrenaux">
 			<?php while ( have_rows( 'creneaux_d’entrainement' ) ) : the_row(); ?>
-            <h2>Crenaux d'entrainement</h2>
+            <h2>Creneaux d'entrainement</h2>
 			<p><?php the_sub_field( 'texte_creneaux_d’entrainement' ); ?></p>	
 				<?php $lien_creneaux_d_entrainement = get_sub_field( 'lien_creneaux_d’entrainement' ); ?>
 				<?php if ( $lien_creneaux_d_entrainement ) : ?>

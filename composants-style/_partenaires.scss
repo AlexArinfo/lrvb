@@ -1,0 +1,22 @@
+.page-id-25{
+    .container{
+        @include container;
+    }
+    p{
+        @include p;
+    }
+    .wp-container-2{
+        display: flex;
+        flex-wrap: wrap;
+        .body > figure {
+           width: 20%;
+           img{
+            width: 100%;
+            height: auto;
+           }
+        } 
+    }       
+}
+
+
+
